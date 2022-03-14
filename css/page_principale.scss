@@ -5,10 +5,12 @@
 $violet:#9356DC;
 $rose: #FF79DA;
 $vert:#99E2D0;
+$vert-fonce: #2ABEA4;
 $blanc:#fff;
 $gris: #DEDADA;
 $gris-clair: #F3F1F1;
 $gris-fonce: #989696;
+$noir: black;
 
 $roboto: 'Roboto';
 $shrikhand: 'Shrikhand';
@@ -150,13 +152,87 @@ $shrikhand: 'Shrikhand';
       }   
       i
       {
-        margin-left: -10%;
-        margin-right: 10%;
-        margin-top: 8%;
+        @include marge(8%,10%,0%,-10%);
         color: $gris-fonce;
       } 
     }
   }
+}
+
+.restaurants
+{
+  font-family: $roboto;
+  background-color: $gris-clair;
+  @include padding(5%,0 ,5% ,0 );
+  a
+  {
+    text-decoration: none;
+  }
+  h1
+  {
+    font-weight: 800;
+    font-size: 130%;
+    @include marge(8%,0,4%,5% )
+  }
+  img
+  {
+    @include taille_image(90%,25%);
+    @include marge(0%,0,0%,5%);
+    border-radius: 30px;
+    
+  }
+  .carte_restaurant
+  {
+    .nouveau 
+    {
+      p
+      {
+      font-size: 80%;
+      color: $vert-fonce;
+      background-color: $vert;
+      font-weight: 800;
+      @include padding(2%,4%,2%,4% );
+      @include marge(6%,0,0,66%);
+      position:absolute;
+      }
+    }
+    .detail_restaurant
+    {
+      display: flex;
+      background-color: $blanc;
+      position: relative;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      @include marge(-10%,5%,10% ,5%);
+      .texte_restaurant
+      {
+        font-family: $roboto;
+        color: $noir;
+        font-size: 90%;
+        @include marge(0,0 ,0 ,5% );
+        p{
+          @include marge(-10%,0 ,0 ,0);
+          @include padding(0%,0%,15%,0%);
+        }
+      }
+      i
+      {
+        @include marge(6%, 0 ,0 ,40%);
+        font-size: 130%;
+        
+      }
+    }
+  }
+
+}
+
+footer
+{
+  h3
+  {
+    
+  }
+
 }
 
 
