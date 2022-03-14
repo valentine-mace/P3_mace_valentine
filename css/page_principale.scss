@@ -1,8 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+
 $violet:#9356DC;
 $rose: #FF79DA;
 $vert:#99E2D0;
+$blanc:#fff;
+$gris: #DEDADA;
+$gris-clair: #F3F1F1;
+$gris-fonce: #989696;
 
-body
+$roboto: 'Roboto';
+$shrikhand: 'Shrikhand';
+
+@mixin position_centre
 {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
 }
+
+@mixin marge($haut,$droit,$bas,$gauche)
+{
+  margin-top: $haut;
+  margin-right: $droit;
+  margin-bottom: $bas;
+  margin-left: $gauche;
+}
+
+@mixin padding($haut,$droit,$bas,$gauche)
+{
+  padding-top: $haut;
+  padding-right: $droit;
+  padding-bottom: $bas;
+  padding-left: $gauche;
+}
+
+@mixin taille_image($largeur, $hauteur)
+{
+  width: $largeur;
+  height: $hauteur;
+}
+
+@mixin grand_titre 
+{
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+@mixin nom_restaurant 
+{
+  
+}
+
+.logo
+{
+  background-color: $blanc;
+  @include position_centre;
+    img{
+      @include taille_image(50%,30%);
+      @include marge(5%,0,5%,0);
+    }
+ 
+}
+
+.localisation
+{
+
+  background-color: $gris;
+  @include position_centre;
+    p{
+      font-family: $roboto;
+      font-weight: 800;
+      font-size: 110%;
+    }
+    i{
+      @include marge(5%,5%,0,-10%);
+    }
+
+}
+
+.presentation_page
+{
+  font-family: $roboto;
+  background-color: $gris-clair;
+  @include padding(3%,0 ,12%,0 );
+    h1
+    {
+      font-weight: 800;
+      font-size: 130%;
+      @include marge(10%,20% ,5% ,20% );
+      text-align: center;
+    }
+    h3
+    {
+      font-size: 110%;
+      @include marge(0%,5% ,10% ,5% );
+      text-align: center;
+    }
+    button
+    {
+      @include marge(0%,25% ,0 ,25%);
+      @include padding(4%,3% ,4% ,3% );
+      border-radius: 30px;
+      font-family: $roboto;
+      font-weight: 900;
+      color: $blanc;
+      background: linear-gradient(to right,$rose, $violet);
+      border: none;
+    }
+}
+
+.fonctionnement
+{
+  font-family: $roboto;
+  h1
+  {
+    font-weight: 800;
+    font-size: 130%;
+    @include marge(8%,0,3%,5% )
+  }
+  .choix
+  {
+    display: flex;
+    @include marge(0,0 ,8% ,0 );
+    .numero
+      p
+      {
+        font-size: 90%;
+        background-color: $violet;
+        color: $blanc;
+        border-radius: 100px;
+        position: absolute;
+        @include marge(4%,0 ,0 ,5%);
+        @include padding(2%,3% ,2% ,3% );
+        text-align: center;
+      }
+    .bulle
+    {
+      display: flex;
+      @include marge(0,2% ,0 ,8%);
+      border-radius: 20px;
+      background-color: $gris-clair;
+      @include padding(3%,25% ,3% ,15%);
+      p
+      {
+        display: flex;
+        font-size: 90%;
+        font-weight: 800;    
+      }   
+      i
+      {
+        margin-left: -10%;
+        margin-right: 10%;
+        margin-top: 8%;
+        color: $gris-fonce;
+      } 
+    }
+  }
+}
+
+
+
+
+

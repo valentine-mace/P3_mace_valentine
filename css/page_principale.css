@@ -1,4 +1,162 @@
-body {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.logo {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.logo img {
+  width: 50%;
+  height: 30%;
+  margin-top: 5%;
+  margin-right: 0;
+  margin-bottom: 5%;
+  margin-left: 0;
+}
+
+.localisation {
+  background-color: #DEDADA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.localisation p {
+  font-family: "Roboto";
+  font-weight: 800;
+  font-size: 110%;
+}
+
+.localisation i {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+  margin-left: -10%;
+}
+
+.presentation_page {
+  font-family: "Roboto";
+  background-color: #F3F1F1;
+  padding-top: 3%;
+  padding-right: 0;
+  padding-bottom: 12%;
+  padding-left: 0;
+}
+
+.presentation_page h1 {
+  font-weight: 800;
+  font-size: 130%;
+  margin-top: 10%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.presentation_page h3 {
+  font-size: 110%;
+  margin-top: 0%;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.presentation_page button {
+  margin-top: 0%;
+  margin-right: 25%;
+  margin-bottom: 0;
+  margin-left: 25%;
+  padding-top: 4%;
+  padding-right: 3%;
+  padding-bottom: 4%;
+  padding-left: 3%;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-weight: 900;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to right, #FF79DA, #9356DC);
+  border: none;
+}
+
+.fonctionnement {
+  font-family: "Roboto";
+}
+
+.fonctionnement h1 {
+  font-weight: 800;
+  font-size: 130%;
+  margin-top: 8%;
+  margin-right: 0;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+.fonctionnement .choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 8%;
+  margin-left: 0;
+}
+
+.fonctionnement .choix .numero
+p {
+  font-size: 90%;
+  background-color: #9356DC;
+  color: #fff;
+  border-radius: 100px;
+  position: absolute;
+  margin-top: 4%;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+  padding-top: 2%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  text-align: center;
+}
+
+.fonctionnement .choix .bulle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  margin-right: 2%;
+  margin-bottom: 0;
+  margin-left: 8%;
+  border-radius: 20px;
+  background-color: #F3F1F1;
+  padding-top: 3%;
+  padding-right: 25%;
+  padding-bottom: 3%;
+  padding-left: 15%;
+}
+
+.fonctionnement .choix .bulle p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 90%;
+  font-weight: 800;
+}
+
+.fonctionnement .choix .bulle i {
+  margin-left: -10%;
+  margin-right: 10%;
+  margin-top: 8%;
+  color: #989696;
 }
 /*# sourceMappingURL=page_principale.css.map */
