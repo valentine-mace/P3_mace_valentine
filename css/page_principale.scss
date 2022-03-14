@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
 
 
 $violet:#9356DC;
@@ -11,9 +10,10 @@ $gris: #DEDADA;
 $gris-clair: #F3F1F1;
 $gris-fonce: #989696;
 $noir: black;
+$gris-noir: #484949;
 
 $roboto: 'Roboto';
-$shrikhand: 'Shrikhand';
+$shrikhand: 'Shrikhand', cursive;
 
 @mixin position_centre
 {
@@ -228,9 +228,26 @@ $shrikhand: 'Shrikhand';
 
 footer
 {
+  background-color:$gris-noir;
+  @include padding(5%, 0 ,5% ,0 );
   h3
   {
-    
+    font-family: $shrikhand;
+    color: $blanc;
+    @include marge(0,0,0 ,10% );
+
+  }
+  li
+  {
+    list-style-type: none;
+    font-family: $roboto;
+    color: $blanc;
+    font-size: 80%;
+    @include marge(0,0,3%,0);
+    i
+    {
+      @include marge(0,4% ,0,0 );
+    }
   }
 
 }

@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 .logo {
   background-color: #fff;
   display: -webkit-box;
@@ -250,5 +249,40 @@ p {
   margin-bottom: 0;
   margin-left: 40%;
   font-size: 130%;
+}
+
+footer {
+  background-color: #484949;
+  padding-top: 5%;
+  padding-right: 0;
+  padding-bottom: 5%;
+  padding-left: 0;
+}
+
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  color: #fff;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 10%;
+}
+
+footer li {
+  list-style-type: none;
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 80%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 3%;
+  margin-left: 0;
+}
+
+footer li i {
+  margin-top: 0;
+  margin-right: 4%;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 /*# sourceMappingURL=page_principale.css.map */
