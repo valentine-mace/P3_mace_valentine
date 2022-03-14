@@ -7,6 +7,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-shadow: 2px 12px 12px -10px #9C9B82;
+          box-shadow: 2px 12px 12px -10px #9C9B82;
 }
 
 .logo img {
@@ -85,6 +87,8 @@
   background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to right, #FF79DA, #9356DC);
   border: none;
+  -webkit-box-shadow: 2px 2px 12px #aaa;
+          box-shadow: 2px 2px 12px #aaa;
 }
 
 .fonctionnement {
@@ -142,6 +146,8 @@ p {
   padding-right: 25%;
   padding-bottom: 3%;
   padding-left: 15%;
+  -webkit-box-shadow: 1px 1px 8px #aaa;
+          box-shadow: 1px 1px 8px #aaa;
 }
 
 .fonctionnement .choix .bulle p {

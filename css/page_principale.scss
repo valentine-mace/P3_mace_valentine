@@ -57,6 +57,7 @@ $shrikhand: 'Shrikhand', cursive;
       @include taille_image(50%,30%);
       @include marge(5%,0,5%,0);
     }
+  box-shadow: 2px 12px 12px -10px #9C9B82;
  
 }
 
@@ -104,6 +105,7 @@ $shrikhand: 'Shrikhand', cursive;
       color: $blanc;
       background: linear-gradient(to right,$rose, $violet);
       border: none;
+      box-shadow: 2px 2px 12px #aaa;
     }
 }
 
@@ -139,6 +141,7 @@ $shrikhand: 'Shrikhand', cursive;
       border-radius: 20px;
       background-color: $gris-clair;
       @include padding(3%,25% ,3% ,15%);
+      box-shadow: 1px 1px 8px #aaa;
       p
       {
         display: flex;
@@ -150,6 +153,10 @@ $shrikhand: 'Shrikhand', cursive;
         @include marge(8%,10%,0%,-10%);
         color: $gris-fonce;
       } 
+    }
+    .bulle:after
+    {
+      
     }
   }
 }
@@ -173,8 +180,7 @@ $shrikhand: 'Shrikhand', cursive;
   {
     @include taille_image(90%,25%);
     @include marge(0%,0,0%,5%);
-    border-radius: 30px;
-    
+    border-radius: 30px; 
   }
   .carte_restaurant
   {
@@ -190,6 +196,9 @@ $shrikhand: 'Shrikhand', cursive;
       @include marge(6%,0,0,66%);
       position:absolute;
       }
+    }
+    .test{
+     
     }
     .detail_restaurant
     {
