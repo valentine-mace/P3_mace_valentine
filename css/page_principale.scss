@@ -49,11 +49,6 @@ $shrikhand: 'Shrikhand', cursive;
   font-weight: bold;
 }
 
-@mixin nom_restaurant 
-{
-  
-}
-
 .logo
 {
   background-color: $blanc;
@@ -102,7 +97,7 @@ $shrikhand: 'Shrikhand', cursive;
     button
     {
       @include marge(0%,25% ,0 ,25%);
-      @include padding(4%,3% ,4% ,3% );
+      @include padding(4%,4% ,4% ,4% );
       border-radius: 30px;
       font-family: $roboto;
       font-weight: 900;
@@ -247,6 +242,12 @@ footer
     i
     {
       @include marge(0,4% ,0,0 );
+    }
+    a
+    {
+      text-decoration: none;
+      font-family: $roboto;
+      color: $blanc;
     }
   }
 
