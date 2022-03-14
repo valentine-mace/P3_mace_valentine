@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,IAAI,CACJ;EACE,gBAAgB,EAAE,IAAI;CACvB",
+    "sources": [
+        "page_principale.scss"
+    ],
+    "names": [],
+    "file": "page_principale.css"
+}
