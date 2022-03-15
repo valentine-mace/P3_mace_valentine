@@ -15,7 +15,7 @@ header
   .logo
   {
     img{
-      @include taille_image(50%,40%);
+      @include taille_image(40%,40%);
       @include marge(10%,0,7%,15%);
     }
 
@@ -23,7 +23,7 @@ header
   .localisation
   {
 
-    @include marge(2%,5%,0,10%);
+    @include marge(3%,5%,0,10%);
     @include position_centre;
       p{
         font-family: $roboto;
@@ -47,16 +47,16 @@ header
     {
       font-weight: 800;
       font-size: 130%;
-      @include marge(0,38%,1%,38%);
+      @include marge(0,0%,1%,30%);
     }
     h3
     {
       font-size: 110%;
-      @include marge(0,33%,2%,33%);
+      @include marge(0,0%,2%,20%);
     }
     button
     {
-      @include marge(0%,43% ,0 ,43%);
+      @include marge(0%,0% ,0 ,40%);
       @include padding(2%,2% ,2% ,2%);
       border-radius: 30px;
       font-family: $roboto;
@@ -75,12 +75,12 @@ header
   {
     font-weight: 800;
     font-size: 130%;
-    @include marge(2%,0,3%,45% )
+    @include marge(2%,0,3%,40% )
   }
   .choix
   {
     display: flex;
-    @include marge(0,0 ,2% ,38%);
+    @include marge(0,0 ,2% ,30%);
     .numero
     {
       p
@@ -90,7 +90,7 @@ header
         color: $blanc;
         border-radius: 100px;
         position: absolute;
-        @include marge(0.5%,0 ,0 ,2%);
+        @include marge(1%,0 ,0 ,2%);
         @include padding(1%,1% ,1% ,1% );
         text-align: center;
       }
@@ -131,11 +131,11 @@ header
   {
     font-weight: 800;
     font-size: 140%;
-    @include marge(2%,0,0%,45%)
+    @include marge(2%,0,0%,40%)
   }
   .carte_restaurant
   {
-    @include marge(5%,20%,0,20%);
+    @include marge(5%,15%,0,15%);
     img
     {
       @include taille_image(90%,40%);
@@ -151,7 +151,7 @@ header
       background-color: $vert;
       font-weight: 800;
       @include padding(2%,3%,2%,3% );
-      @include marge(2%,0,0,44%);
+      @include marge(2%,0,0,50%);
       position:absolute;
       }
     }
@@ -169,7 +169,7 @@ header
         color: $noir;
         font-size: 100%;
         @include marge(0,0 ,0 ,2% );
-        @include padding(3%,0%,3%,0%);
+        @include padding(2%,0%,2%,0%);
 
         p{
           @include marge(10%,0 ,0 ,0);
@@ -178,7 +178,7 @@ header
       }
       i
       {
-        @include marge(6%, 0 ,0 ,70%);
+        @include marge(6%, 0 ,0 ,60%);
         font-size: 130%;
         
       }
@@ -196,7 +196,7 @@ footer
     font-family: $shrikhand;
     font-size: 160%;
     color: $blanc;
-    @include marge(0,0,0 ,2% );
+    @include marge(0,0,0 ,4% );
 
   }
   li
