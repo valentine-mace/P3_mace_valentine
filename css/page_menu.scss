@@ -49,6 +49,7 @@ main
   .titre
   {
     display: flex;
+    justify-content: space-between;
     h1
     {
       font-family: $shrikhand;
@@ -57,7 +58,7 @@ main
     i
     {
       font-size: 140%;
-      @include marge(7%,0%,0%,18%);
+      @include marge(7%,0%,0%,0%);
 
     }
   }
