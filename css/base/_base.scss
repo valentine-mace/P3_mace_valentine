@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+
+$roboto: 'Roboto';
+$shrikhand: 'Shrikhand', cursive;
+
+@mixin position_centre
+{
+  display: flex;
+  justify-content: center;
+}
+
+@mixin marge($haut,$droit,$bas,$gauche)
+{
+  margin-top: $haut;
+  margin-right: $droit;
+  margin-bottom: $bas;
+  margin-left: $gauche;
+}
+
+@mixin padding($haut,$droit,$bas,$gauche)
+{
+  padding-top: $haut;
+  padding-right: $droit;
+  padding-bottom: $bas;
+  padding-left: $gauche;
+}
+
+@mixin taille_image($largeur, $hauteur)
+{
+  width: $largeur;
+  height: $hauteur;
+}
+
+@mixin grand_titre 
+{
+  font-family: 'Roboto';
+  font-weight: bold;
+}

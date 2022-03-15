@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" media="screen and (max-width : 767px)" href="css/palette_gout.css"/>
         <title>La palette du goût</title>
     </head>
 
@@ -13,101 +14,105 @@
 
       <header>
 
-        <a href="page_principale.html"><i class="fas fa-arrow-left"></i></a>
-        <img src="images/ohmyfood_logo.png" alt="Logo de OhMyFood" id="ohmyfood_logo" />
+        <div class="fleche">
+          <a href="page_principale.html"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="logo">
+          <img src="images/ohmyfood_logo.png" alt="Logo de OhMyFood" id="ohmyfood_logo" />
+        </div>
 
       </header>
 
       <main>
+
         <img src="images/palette_gout.jpg" alt="Photo de La palette du goût" id="palette_gout_photo" />
 
-        <div>
+        <div class="section_principale">
 
-          <div>
+          <div class="titre">
             <h1>La palette du goût</h1>
             <i class="far fa-heart"></i>
           </div>
 
-          <h4>ENTRÉES</h4>
+          <h4 class="type">ENTRÉES</h4>
 
-          <div>
+          <div class="menu">
             <h4>Fricassée d'escargot</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Au piment d'Espelette</p>
               <p><strong>25€</strong></p>
             </div>
           </div>
 
-          
-          <div>
+          <div class="menu">
             <h4>Foie gras de canard mi-cuit</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Et ses copeaux de truffe noire</p>
               <p><strong>35€</strong></p>
             </div>
           </div>
 
           
-          <div>
+          <div class="menu">
             <h4>Oeuf au plat</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Assaisonné à la truffe sur lit de caviar</p>
               <p><strong>20€</strong></p>
             </div>
           </div>
 
           
-          <h4>PLATS</h4>
+          <h4 class="type extra_marge">PLATS</h4>
 
-          <div>
+          <div class="menu">
             <h4>Filet de boeuf aux herbes</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Accompagné de sa ribambelle de légumes</p>
               <p><strong>40€</strong></p>
             </div>
           </div>
 
           
-          <div>
+          <div class="menu">
             <h4>Parmentier de queue de boeuf</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>À la truffe noire sur sa purée de panais</p>
               <p><strong>35€</strong></p>
             </div>
           </div>
 
           
-          <div>
+          <div class="menu">
             <h4>Filet de turbot</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Aux agrumes</p>
               <p><strong>44€</strong></p>
             </div>
           </div>
 
-          <h4>DESSERTS</h4>
+          <h4 class="type extra_marge">DESSERTS</h4>
 
-          <div>
+          <div class="menu">
             <h4>Paris-Brest</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Revisité</p>
               <p><strong>18€</strong></p>
             </div>
           </div>
 
           
-          <div>
+          <div class="menu">
             <h4>Macaron au chocolat d'exception </h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Et glace à la vanille de Madagascar</p>
               <p><strong>22€</strong></p>
             </div>
           </div>
 
           
-          <div>
+          <div class="menu">
             <h4>Mousse au chocolat</h4>
-            <div>
+            <div class="prix_accompagnement">
               <p>Au piment d'Espelette et à la truffe noire</p>
               <p><strong>23€</strong></p>
             </div>
@@ -127,7 +132,7 @@
           <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
           <li><i class="fas fa-hands-helping"></i>Devenir un partenaire</li>
           <li>Mentions légales</li>
-          <li>Contact</li>
+          <li><a href="mailto:ohmyfood@gmail.com">Contact</a></li>
         </ul>
 
       </footer>
