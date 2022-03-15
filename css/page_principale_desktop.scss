@@ -6,56 +6,58 @@ body
   margin: auto;
 }
 
-.logo
+header
 {
+  display: flex;
+  justify-content: space-between;
   background-color: $blanc;
-  @include position_centre;
+  box-shadow: 2px 12px 10px -10px #9C9B82;
+  .logo
+  {
     img{
-      @include taille_image(50%,30%);
-      @include marge(5%,0,5%,0);
+      @include taille_image(50%,40%);
+      @include marge(10%,0,7%,15%);
     }
-  box-shadow: 2px 12px 12px -10px #9C9B82;
- 
+
+  }
+  .localisation
+  {
+
+    @include marge(2%,5%,0,10%);
+    @include position_centre;
+      p{
+        font-family: $roboto;
+        font-weight: 800;
+        font-size: 110%;
+      }
+      i{
+        @include marge(16%,10%,0,-10%);
+      }
+
+  }
 }
 
-.localisation
-{
-
-  background-color: $gris;
-  @include position_centre;
-    p{
-      font-family: $roboto;
-      font-weight: 800;
-      font-size: 110%;
-    }
-    i{
-      @include marge(5%,5%,0,-10%);
-    }
-
-}
 
 .presentation_page
 {
   font-family: $roboto;
   background-color: $gris-clair;
-  @include padding(3%,0 ,12%,0 );
+  @include padding(3%,0 ,3%,0 );
     h1
     {
       font-weight: 800;
       font-size: 130%;
-      @include marge(10%,20% ,5% ,20% );
-      text-align: center;
+      @include marge(0,0,1%,40%);
     }
     h3
     {
       font-size: 110%;
-      @include marge(0%,5% ,10% ,5% );
-      text-align: center;
+      @include marge(0,0,2%,35%);
     }
     button
     {
-      @include marge(0%,25% ,0 ,25%);
-      @include padding(4%,4% ,4% ,4% );
+      @include marge(0%,0% ,0 ,43%);
+      @include padding(2%,2% ,2% ,2%);
       border-radius: 30px;
       font-family: $roboto;
       font-weight: 900;
@@ -73,12 +75,12 @@ body
   {
     font-weight: 800;
     font-size: 130%;
-    @include marge(8%,0,3%,5% )
+    @include marge(2%,0,3%,45% )
   }
   .choix
   {
     display: flex;
-    @include marge(0,0 ,8% ,0 );
+    @include marge(0,0 ,2% ,38%);
     .numero
     {
       p
@@ -88,18 +90,18 @@ body
         color: $blanc;
         border-radius: 100px;
         position: absolute;
-        @include marge(4%,0 ,0 ,5%);
-        @include padding(2%,3% ,2% ,3% );
+        @include marge(0.5%,0 ,0 ,2%);
+        @include padding(1%,1% ,1% ,1% );
         text-align: center;
       }
     }
     .bulle
     {
       display: flex;
-      @include marge(0,2% ,0 ,8%);
+      @include marge(0,2% ,0 ,5%);
       border-radius: 20px;
       background-color: $gris-clair;
-      @include padding(3%,25% ,3% ,15%);
+      @include padding(1%,10% ,1% ,6%);
       box-shadow: 1px 1px 8px #aaa;
       p
       {
@@ -109,7 +111,7 @@ body
       }   
       i
       {
-        @include marge(8%,10%,0%,-10%);
+        @include marge(9%,10%,0%,-10%);
         color: $gris-fonce;
       } 
     }
@@ -120,7 +122,7 @@ body
 {
   font-family: $roboto;
   background-color: $gris-clair;
-  @include padding(5%,0 ,5% ,0 );
+  @include padding(1%,0 ,1% ,0 );
   a
   {
     text-decoration: none;
@@ -128,27 +130,28 @@ body
   h1
   {
     font-weight: 800;
-    font-size: 130%;
-    @include marge(8%,0,4%,5% )
-  }
-  img
-  {
-    @include taille_image(90%,25%);
-    @include marge(0%,0,0%,5%);
-    border-radius: 30px; 
+    font-size: 140%;
+    @include marge(2%,0,0%,45%)
   }
   .carte_restaurant
   {
+    @include marge(5%,20%,0,20%);
+    img
+    {
+      @include taille_image(90%,40%);
+      margin-left: 5%;
+      border-radius: 30px; 
+    }
     .nouveau 
     {
       p
       {
-      font-size: 80%;
+      font-size: 100%;
       color: $vert-fonce;
       background-color: $vert;
       font-weight: 800;
-      @include padding(2%,4%,2%,4% );
-      @include marge(6%,0,0,66%);
+      @include padding(2%,3%,2%,3% );
+      @include marge(2%,0,0,44%);
       position:absolute;
       }
     }
@@ -164,16 +167,18 @@ body
       {
         font-family: $roboto;
         color: $noir;
-        font-size: 90%;
-        @include marge(0,0 ,0 ,5% );
+        font-size: 100%;
+        @include marge(0,0 ,0 ,2% );
+        @include padding(3%,0%,3%,0%);
+
         p{
-          @include marge(-10%,0 ,0 ,0);
+          @include marge(10%,0 ,0 ,0);
           @include padding(0%,0%,15%,0%);
         }
       }
       i
       {
-        @include marge(6%, 0 ,0 ,40%);
+        @include marge(6%, 0 ,0 ,70%);
         font-size: 130%;
         
       }
@@ -185,12 +190,13 @@ body
 footer
 {
   background-color:$gris-noir;
-  @include padding(5%, 0 ,5% ,0 );
+  @include padding(2%, 0 ,2% ,0 );
   h3
   {
     font-family: $shrikhand;
+    font-size: 160%;
     color: $blanc;
-    @include marge(0,0,0 ,10% );
+    @include marge(0,0,0 ,2% );
 
   }
   li
@@ -198,11 +204,11 @@ footer
     list-style-type: none;
     font-family: $roboto;
     color: $blanc;
-    font-size: 80%;
+    font-size: 100%;
     @include marge(0,0,3%,0);
     i
     {
-      @include marge(0,4% ,0,0 );
+      @include marge(0,1% ,0,0 );
     }
     a
     {
@@ -213,8 +219,4 @@ footer
   }
 
 }
-
-
-
-
 
