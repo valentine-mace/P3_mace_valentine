@@ -12,6 +12,7 @@ header
 {
   background-color: $blanc;
   @include marge(0,0,5%,0);
+  position: absolute;
   .fleche
   {
     i{
@@ -35,6 +36,10 @@ main
   {
     @include taille_image(100%,20%);
     @include marge(0%,0%,0%,0);
+  }
+  .image_small
+  {
+    @include marge(-10%,0%,0%,0);
   }
 }
 
@@ -111,6 +116,11 @@ main
     border: none;
   }
   
+}
+
+.top_marge
+{
+  @include marge(-40%,0%,0%,0%);
 }
 
 footer

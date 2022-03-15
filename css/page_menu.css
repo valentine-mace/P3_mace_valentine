@@ -10,6 +10,7 @@ header {
   margin-right: 0;
   margin-bottom: 5%;
   margin-left: 0;
+  position: absolute;
 }
 
 header .fleche i {
@@ -41,6 +42,13 @@ main img {
   width: 100%;
   height: 20%;
   margin-top: 0%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 0;
+}
+
+main .image_small {
+  margin-top: -10%;
   margin-right: 0%;
   margin-bottom: 0%;
   margin-left: 0;
@@ -154,6 +162,13 @@ main img {
   background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to right, #FF79DA, #9356DC);
   border: none;
+}
+
+.top_marge {
+  margin-top: -40%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
 }
 
 footer {
