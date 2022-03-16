@@ -11,12 +11,14 @@ body
 header
 {
   background-color: $blanc;
-  @include marge(0,0,5%,0);
+  @include marge(0,0,10%,0);
+  @include padding(0,70%,4%,10%);
   position: absolute;
   .fleche
   {
     i{
-      @include marge(9%,0,0%,5%);
+      @include marge(9%,0,0%,-40%);
+      font-size: 170%;
       color: $noir;
     }
   }
@@ -25,8 +27,9 @@ header
     @include position_centre;
     img
     {
-      @include taille_image(50%,30%);
-      @include marge(-7%,0,0%,0);
+      @include taille_image(100%,80%);
+      @include marge(-7%,60%,0%,350%);
+
     }
   }
 }
@@ -35,12 +38,12 @@ main
 {
   img
   {
-    @include taille_image(100%,20%);
-    @include marge(0%,0%,0%,0);
+    @include taille_image(100%,10%);
+    @include marge(-10%,0%,0%,0);
   }
   .image_small
   {
-    @include marge(-10%,0%,0%,0);
+    @include marge(-40%,0%,0%,0);
   }
 }
 
@@ -49,7 +52,7 @@ main
   background-color: $gris-clair;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  @include padding(4%,6%,10%,6%);
+  @include padding(4%,6%,2%,6%);
   @include marge(-12%,0%,0%,0%);
   position: relative;
   .titre
@@ -64,7 +67,7 @@ main
     i
     {
       font-size: 140%;
-      @include marge(7%,0%,0%,0%);
+      @include marge(2%,0%,0%,0%);
 
     }
   }
@@ -73,12 +76,12 @@ main
     font-family: $roboto;
     border-bottom: 2px solid $vert;
     @include padding(0,0,0,0);
-    @include marge(0%,89%,0%,0%);
+    @include marge(2%,89%,0%,0%);
   }
   .extra_marge
   {
     
-    @include marge(10%,89%,0%,0%);
+    @include marge(5%,89%,0%,0%);
     
   }
   .menu
@@ -91,7 +94,7 @@ main
     @include marge(0,-1%,0,-1%);
     h4
     {
-      margin-bottom: -3%;
+      margin-bottom: -1%;
       padding-top: 3%;
       padding-right: 30%;
     }
@@ -107,12 +110,13 @@ main
   }
   button
   {
-    @include marge(10%,25% ,0 ,25%);
-    @include padding(4%,10% ,4% ,10% );
+    @include marge(5%,40% ,0,40%);
+    @include padding(2%,5%,2% ,5% );
     border-radius: 30px;
     font-family: $roboto;
     font-weight: 900;
     color: $blanc;
+    font-size: 100%;
     background: linear-gradient(to right,$rose, $violet);
     border: none;
   }
@@ -127,12 +131,13 @@ main
 footer
 {
   background-color:$gris-noir;
-  @include padding(5%, 0 ,5% ,0 );
+  @include padding(2%, 0 ,1% ,0 );
   h3
   {
     font-family: $shrikhand;
     color: $blanc;
-    @include marge(0,0,0 ,10% );
+    @include marge(0,0,2% ,3% );
+    font-size: 150%;
 
   }
   li
@@ -140,11 +145,11 @@ footer
     list-style-type: none;
     font-family: $roboto;
     color: $blanc;
-    font-size: 80%;
+    font-size: 100%;
     @include marge(0,0,3%,0);
     i
     {
-      @include marge(0,4% ,0,0 );
+      @include marge(0,1% ,0,0 );
     }
     a
     {
