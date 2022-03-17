@@ -65,6 +65,11 @@ header
       background: linear-gradient(to right,$rose, $violet);
       border: none;
       box-shadow: 2px 2px 12px #aaa;
+      &:hover
+      {
+        filter: brightness(120%);
+        box-shadow: 2px 2px 12px $gris-noir;
+      }
     }
 }
 
@@ -115,8 +120,15 @@ header
           display: flex;
           font-size: 90%;
           font-weight: 800;    
-        }   
-      
+        }  
+        &:hover
+        {
+          background-color: #f5edff;
+          i{
+            color: $violet;
+          }
+        } 
+       
       }
     }
   } 

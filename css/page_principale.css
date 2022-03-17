@@ -95,6 +95,13 @@ body {
           box-shadow: 2px 2px 12px #aaa;
 }
 
+.presentation_page button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 2px 2px 12px #484949;
+          box-shadow: 2px 2px 12px #484949;
+}
+
 .fonctionnement {
   font-family: "Roboto", sans-serif;
 }
@@ -167,6 +174,14 @@ body {
   margin-bottom: 0%;
   margin-left: -10%;
   color: #989696;
+}
+
+.fonctionnement .choix .bulle:hover {
+  background-color: #f5edff;
+}
+
+.fonctionnement .choix .bulle:hover i {
+  color: #9356DC;
 }
 
 .restaurants {
