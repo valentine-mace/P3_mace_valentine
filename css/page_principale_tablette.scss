@@ -131,29 +131,19 @@ header
   {
     font-weight: 800;
     font-size: 140%;
-    @include marge(2%,0,0%,40%)
+    @include marge(2%,0,5%,40%)
   }
   .carte_restaurant
   {
-    @include marge(5%,15%,0,15%);
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    margin-bottom: 20%;
     img
     {
-      @include taille_image(90%,40%);
-      margin-left: 5%;
+      height: 400px;
+      width: 600px;
       border-radius: 30px; 
-    }
-    .test
-    {
-      height: 322px;
-      width: 510px;
-      text-align: center; /* On centre l'image dans le div */
-      overflow: hidden; 
-      border-radius: 30px;
-      img{
-        height: 322px;
-        width: 510px;
-        margin-left: 6%;
-      }
     }
     .nouveau 
     {
@@ -163,19 +153,21 @@ header
       color: $vert-fonce;
       background-color: $vert;
       font-weight: 800;
-      @include padding(2%,3%,2%,3% );
-      @include marge(2%,0,0,50%);
+      @include padding(1%,2%,1%,2% );
+      @include marge(3%,0,0,60%);
       position:absolute;
       }
     }
     .detail_restaurant
     {
       display: flex;
+      justify-content: space-around;
       background-color: $blanc;
       position: relative;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
-      @include marge(-10%,5%,10% ,5%);
+      margin: auto;
+      margin-top: -10%;
       .texte_restaurant
       {
         font-family: $roboto;
@@ -185,13 +177,12 @@ header
         @include padding(2%,0%,2%,0%);
 
         p{
-          @include marge(10%,0 ,0 ,0);
-          @include padding(0%,0%,15%,0%);
+          @include padding(0%,0%,10%,0%);
         }
       }
       i
       {
-        @include marge(6%, 0 ,0 ,60%);
+        @include marge(6%, 0 ,0 ,50%);
         font-size: 130%;
         
       }
