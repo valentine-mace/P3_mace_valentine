@@ -38,28 +38,29 @@ body
 {
   font-family: $roboto;
   background-color: $gris-clair;
-  @include padding(3%,0 ,12%,0 );
+  @include padding(3%,0,12%,0 );
     h1
     {
       font-weight: 800;
       font-size: 130%;
-      @include marge(10%,20% ,5% ,20% );
+      @include marge(5%,20% ,5% ,20% );
       text-align: center;
     }
     p
     {
       font-size: 110%;
-      @include marge(0%,5% ,10% ,5% );
+      @include marge(0%,5% ,6% ,5% );
       text-align: center;
     }
     button
     {
       @include marge(0%,25% ,0 ,25%);
-      @include padding(4%,4% ,4% ,4% );
+      @include padding(4%,3% ,4% ,3%);
       border-radius: 30px;
       font-family: $roboto;
       font-weight: 900;
       color: $blanc;
+      font-size: 90%;
       background: linear-gradient(to right,$rose, $violet);
       border: none;
       box-shadow: 2px 2px 12px #aaa;
@@ -131,14 +132,19 @@ body
     font-size: 130%;
     @include marge(8%,0,4%,5% )
   }
-  img
-  {
-    @include taille_image(90%,25%);
-    @include marge(0%,0,0%,5%);
-    border-radius: 30px; 
-  }
   .carte_restaurant
   {
+    width: 340px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 20%;
+    img
+    {
+      width: 340px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 30px; 
+    }
     .nouveau 
     {
       p
@@ -148,18 +154,20 @@ body
       background-color: $vert;
       font-weight: 800;
       @include padding(2%,4%,2%,4% );
-      @include marge(6%,0,0,66%);
+      @include marge(4%,0,0,53%);
       position:absolute;
       }
     }
     .detail_restaurant
     {
       display: flex;
+      justify-content: space-around;
       background-color: $blanc;
       position: relative;
       border-bottom-left-radius: 30px;
       border-bottom-right-radius: 30px;
-      @include marge(-10%,5%,10% ,5%);
+      margin: auto;
+      margin-top: -10%;
       .texte_restaurant
       {
         font-family: $roboto;
@@ -173,7 +181,7 @@ body
       }
       i
       {
-        @include marge(6%, 0 ,0 ,40%);
+        @include marge(6%, 0 ,0 ,30%);
         font-size: 130%;
         
       }
