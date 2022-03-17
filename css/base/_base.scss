@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
-
-$roboto: 'Roboto';
+$roboto: "Roboto", sans-serif;
 $shrikhand: 'Shrikhand', cursive;
 
 @mixin position_centre

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 body {
   margin: auto;
 }
@@ -38,7 +37,7 @@ header .localisation {
 }
 
 header .localisation p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 110%;
 }
@@ -51,7 +50,7 @@ header .localisation i {
 }
 
 .presentation_page {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #F3F1F1;
   padding-top: 3%;
   padding-right: 0;
@@ -62,18 +61,12 @@ header .localisation i {
 .presentation_page h1 {
   font-weight: 800;
   font-size: 130%;
-  margin-top: 0;
-  margin-right: 38%;
-  margin-bottom: 1%;
-  margin-left: 38%;
+  text-align: center;
 }
 
-.presentation_page h3 {
-  font-size: 110%;
-  margin-top: 0;
-  margin-right: 33%;
-  margin-bottom: 2%;
-  margin-left: 33%;
+.presentation_page p {
+  font-size: 100%;
+  text-align: center;
 }
 
 .presentation_page button {
@@ -86,7 +79,7 @@ header .localisation i {
   padding-bottom: 2%;
   padding-left: 2%;
   border-radius: 30px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
@@ -97,7 +90,7 @@ header .localisation i {
 }
 
 .fonctionnement {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .fonctionnement h1 {
@@ -109,7 +102,7 @@ header .localisation i {
   margin-left: 45%;
 }
 
-.fonctionnement .choix {
+.fonctionnement .cartes .choix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,7 +112,7 @@ header .localisation i {
   margin-left: 38%;
 }
 
-.fonctionnement .choix .numero p {
+.fonctionnement .cartes .choix .numero p {
   font-size: 90%;
   background-color: #9356DC;
   color: #fff;
@@ -136,7 +129,7 @@ header .localisation i {
   text-align: center;
 }
 
-.fonctionnement .choix .bulle {
+.fonctionnement .cartes .choix .bulle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,7 +147,7 @@ header .localisation i {
           box-shadow: 1px 1px 8px #aaa;
 }
 
-.fonctionnement .choix .bulle i {
+.fonctionnement .cartes .choix .bulle i {
   margin-top: 9%;
   margin-right: 10%;
   margin-bottom: 0%;
@@ -162,7 +155,7 @@ header .localisation i {
   color: #989696;
 }
 
-.fonctionnement .choix .bulle p {
+.fonctionnement .cartes .choix .bulle p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,7 +164,7 @@ header .localisation i {
 }
 
 .restaurants {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #F3F1F1;
   padding-top: 1%;
   padding-right: 0;
@@ -203,6 +196,8 @@ header .localisation i {
   height: 400px;
   width: 600px;
   border-radius: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurants .carte_restaurant .nouveau p {
@@ -236,7 +231,7 @@ header .localisation i {
 }
 
 .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 100%;
   margin-top: 0;
@@ -284,7 +279,7 @@ footer h3 {
 
 footer li {
   list-style-type: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 100%;
   margin-top: 0;
@@ -302,7 +297,7 @@ footer li i {
 
 footer li a {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 /*# sourceMappingURL=page_principale_desktop.css.map */

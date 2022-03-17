@@ -47,12 +47,12 @@ header
     {
       font-weight: 800;
       font-size: 130%;
-      @include marge(0,38%,1%,38%);
+      text-align: center;
     }
-    h3
+    p
     {
-      font-size: 110%;
-      @include marge(0,33%,2%,33%);
+      font-size: 100%;
+      text-align: center
     }
     button
     {
@@ -77,46 +77,49 @@ header
     font-size: 130%;
     @include marge(2%,0,3%,45% )
   }
-  .choix
+  .cartes
   {
-    display: flex;
-    @include marge(0,0 ,2% ,38%);
-    .numero
-    {
-      p
-      {
-        font-size: 90%;
-        background-color: $violet;
-        color: $blanc;
-        border-radius: 100px;
-        position: absolute;
-        @include marge(0.5%,0 ,0 ,2%);
-        @include padding(1%,1% ,1% ,1% );
-        text-align: center;
-      }
-    }
-    .bulle
+    .choix
     {
       display: flex;
-      @include marge(0,2% ,0 ,5%);
-      border-radius: 20px;
-      background-color: $gris-clair;
-      @include padding(1%,10% ,1% ,6%);
-      box-shadow: 1px 1px 8px #aaa;
-      i
+      @include marge(0,0 ,2% ,38%);
+      .numero
       {
-        @include marge(9%,10%,0%,-10%);
-        color: $gris-fonce;
-      } 
-      p
+        p
+        {
+          font-size: 90%;
+          background-color: $violet;
+          color: $blanc;
+          border-radius: 100px;
+          position: absolute;
+          @include marge(0.5%,0 ,0 ,2%);
+          @include padding(1%,1% ,1% ,1% );
+          text-align: center;
+        }
+      }
+      .bulle
       {
         display: flex;
-        font-size: 90%;
-        font-weight: 800;    
-      }   
-     
+        @include marge(0,2% ,0 ,5%);
+        border-radius: 20px;
+        background-color: $gris-clair;
+        @include padding(1%,10% ,1% ,6%);
+        box-shadow: 1px 1px 8px #aaa;
+        i
+        {
+          @include marge(9%,10%,0%,-10%);
+          color: $gris-fonce;
+        } 
+        p
+        {
+          display: flex;
+          font-size: 90%;
+          font-weight: 800;    
+        }   
+      
+      }
     }
-  }
+  } 
 }
 
 .restaurants
@@ -145,6 +148,7 @@ header
       height: 400px;
       width: 600px;
       border-radius: 30px; 
+      object-fit: cover;
     }
     .nouveau 
     {

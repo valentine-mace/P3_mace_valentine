@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 body {
   margin: auto;
 }
@@ -93,7 +92,7 @@ main .image_small {
 }
 
 .section_principale .type {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   border-bottom: 2px solid #99E2D0;
   padding-top: 0;
   padding-right: 0;
@@ -113,7 +112,7 @@ main .image_small {
 }
 
 .section_principale .menu {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #fff;
   border-radius: 10px;
   padding-top: 0%;
@@ -157,7 +156,7 @@ main .image_small {
   padding-bottom: 4%;
   padding-left: 10%;
   border-radius: 30px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
@@ -191,7 +190,7 @@ footer h3 {
 
 footer li {
   list-style-type: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 80%;
   margin-top: 0;
@@ -209,7 +208,7 @@ footer li i {
 
 footer li a {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 /*# sourceMappingURL=page_menu.css.map */

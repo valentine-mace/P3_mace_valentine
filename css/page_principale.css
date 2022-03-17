@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 body {
   margin: auto;
 }
@@ -35,7 +34,7 @@ body {
 }
 
 .localisation p {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-size: 110%;
 }
@@ -48,7 +47,7 @@ body {
 }
 
 .presentation_page {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #F3F1F1;
   padding-top: 3%;
   padding-right: 0;
@@ -66,7 +65,7 @@ body {
   text-align: center;
 }
 
-.presentation_page h3 {
+.presentation_page p {
   font-size: 110%;
   margin-top: 0%;
   margin-right: 5%;
@@ -85,7 +84,7 @@ body {
   padding-bottom: 4%;
   padding-left: 4%;
   border-radius: 30px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: #fff;
   background: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
@@ -96,7 +95,7 @@ body {
 }
 
 .fonctionnement {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .fonctionnement h1 {
@@ -170,7 +169,7 @@ body {
 }
 
 .restaurants {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: #F3F1F1;
   padding-top: 5%;
   padding-right: 0;
@@ -232,7 +231,7 @@ body {
 }
 
 .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 90%;
   margin-top: 0;
@@ -279,7 +278,7 @@ footer h3 {
 
 footer li {
   list-style-type: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 80%;
   margin-top: 0;
@@ -297,7 +296,7 @@ footer li i {
 
 footer li a {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 /*# sourceMappingURL=page_principale.css.map */
