@@ -119,6 +119,11 @@ main
     font-size: 100%;
     background: linear-gradient(to right,$rose, $violet);
     border: none;
+    &:hover
+    {
+      filter: brightness(120%);
+      box-shadow: 2px 2px 12px $gris-noir;
+    }
   }
   
 }

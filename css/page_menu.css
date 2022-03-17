@@ -164,6 +164,13 @@ main .image_small {
   border: none;
 }
 
+.section_principale button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+  -webkit-box-shadow: 2px 2px 12px #484949;
+          box-shadow: 2px 2px 12px #484949;
+}
+
 .top_marge {
   margin-top: -40%;
   margin-right: 0%;
