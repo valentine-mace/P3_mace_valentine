@@ -103,17 +103,18 @@ header
       background-color: $gris-clair;
       @include padding(1%,10% ,1% ,6%);
       box-shadow: 1px 1px 8px #aaa;
+      i
+      {
+        @include marge(9%,10%,0%,-10%);
+        color: $gris-fonce;
+      } 
       p
       {
         display: flex;
         font-size: 90%;
         font-weight: 800;    
       }   
-      i
-      {
-        @include marge(9%,10%,0%,-10%);
-        color: $gris-fonce;
-      } 
+     
     }
   }
 }

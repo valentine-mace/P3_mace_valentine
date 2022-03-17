@@ -206,6 +206,21 @@ header .localisation i {
   border-radius: 30px;
 }
 
+.restaurants .carte_restaurant .test {
+  height: 322px;
+  width: 510px;
+  text-align: center;
+  /* On centre l'image dans le div */
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.restaurants .carte_restaurant .test img {
+  height: 322px;
+  width: 510px;
+  margin-left: 6%;
+}
+
 .restaurants .carte_restaurant .nouveau p {
   font-size: 100%;
   color: #2ABEA4;
