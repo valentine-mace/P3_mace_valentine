@@ -54,8 +54,9 @@ body
     }
     button
     {
-      @include marge(0%,25% ,0 ,25%);
-      @include padding(4%,3% ,4% ,3%);
+      margin: auto;
+      display: block;
+      @include padding(4%,4% ,4% ,4%);
       border-radius: 30px;
       font-family: $roboto;
       font-weight: 900;
@@ -79,11 +80,13 @@ body
   {
     font-weight: 800;
     font-size: 130%;
-    @include marge(8%,0,3%,5% )
+    @include marge(8%,0,5%,5% )
   }
   .choix
   {
     display: flex;
+    display: block;
+    margin: auto;
     @include marge(0,0 ,8% ,0 );
     .numero
     {
@@ -102,10 +105,10 @@ body
     .bulle
     {
       display: flex;
-      @include marge(0,2% ,0 ,8%);
+      @include marge(0,8% ,0 ,8%);
       border-radius: 20px;
       background-color: $gris-clair;
-      @include padding(3%,25% ,3% ,15%);
+      @include padding(3%,0% ,3% ,15%);
       box-shadow: 1px 1px 8px #aaa;
       p
       {
@@ -115,7 +118,7 @@ body
       }   
       i
       {
-        @include marge(8%,10%,0%,-10%);
+        @include marge(6%,10%,0%,-10%);
         color: $gris-fonce;
       } 
       &:hover
@@ -142,7 +145,7 @@ body
   {
     font-weight: 800;
     font-size: 130%;
-    @include marge(8%,0,4%,5% )
+    @include marge(8%,0,6%,5% )
   }
   .carte_restaurant
   {
@@ -166,7 +169,7 @@ body
       background-color: $vert;
       font-weight: 800;
       @include padding(2%,4%,2%,4% );
-      @include marge(4%,0,0,53%);
+      @include marge(4%,0,0,65%);
       position:absolute;
       }
     }
@@ -205,12 +208,12 @@ body
 footer
 {
   background-color:$gris-noir;
-  @include padding(5%, 0 ,5% ,0 );
+  @include padding(5%,0,5%,0);
   h3
   {
     font-family: $shrikhand;
     color: $blanc;
-    @include marge(0,0,0 ,10% );
+    @include marge(0,0,0,10%);
 
   }
   li
@@ -222,7 +225,7 @@ footer
     @include marge(0,0,3%,0);
     i
     {
-      @include marge(0,4% ,0,0 );
+      @include marge(0,4%,0,0);
     }
     a
     {
@@ -233,6 +236,8 @@ footer
   }
 
 }
+
+
 
 
 
