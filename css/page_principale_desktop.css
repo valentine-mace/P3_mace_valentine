@@ -266,12 +266,26 @@ header .localisation i {
   padding-left: 0%;
 }
 
-.restaurants .carte_restaurant .detail_restaurant i {
-  margin-top: 6%;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0%;
+.restaurants .carte_restaurant .detail_restaurant .coeur span.coeur_plein {
+  display: none;
+}
+
+.restaurants .carte_restaurant .detail_restaurant .coeur span.coeur_vide i {
   font-size: 130%;
+  margin-top: 200%;
+}
+
+.restaurants .carte_restaurant .detail_restaurant .coeur:hover span.coeur_vide {
+  display: none;
+}
+
+.restaurants .carte_restaurant .detail_restaurant .coeur:hover span.coeur_plein {
+  display: block;
+}
+
+.restaurants .carte_restaurant .detail_restaurant .coeur:hover span.coeur_plein i {
+  font-size: 130%;
+  margin-top: 200%;
 }
 
 footer {
