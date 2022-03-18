@@ -6,32 +6,33 @@ body
   margin: auto;
 }
 
-.logo
+header
 {
   background-color: $blanc;
-  @include position_centre;
-    img{
-      @include taille_image(50%,30%);
-      @include marge(5%,0,5%,0);
-    }
   box-shadow: 2px 12px 12px -10px #9C9B82;
- 
-}
+  .logo
+  {
+    @include position_centre;
+      img{
+        @include taille_image(50%,30%);
+        @include marge(5%,0,5%,0);
+      }
+  }
+  .localisation
+  {
 
-.localisation
-{
+    background-color: $gris;
+    @include position_centre;
+      p{
+        font-family: $roboto;
+        font-weight: 800;
+        font-size: 110%;
+      }
+      i{
+        @include marge(5%,5%,0,-10%);
+      }
 
-  background-color: $gris;
-  @include position_centre;
-    p{
-      font-family: $roboto;
-      font-weight: 800;
-      font-size: 110%;
-    }
-    i{
-      @include marge(5%,5%,0,-10%);
-    }
-
+  }
 }
 
 .presentation_page
@@ -43,7 +44,7 @@ body
     {
       font-weight: 800;
       font-size: 130%;
-      @include marge(5%,20% ,5% ,20% );
+      @include marge(5%,20%,5%,20%);
       text-align: center;
     }
     p
@@ -194,12 +195,40 @@ body
           @include padding(0%,0%,15%,0%);
         }
       }
-      i
+      .coeur
       {
-        @include marge(6%, 0 ,0 ,30%);
-        font-size: 130%;
-        
+        span.coeur_plein
+        {
+          display: none;
+        }
+        span.coeur_vide
+        {
+          i
+          {
+          font-size: 130%;
+          margin-top: 200%;
+          }
+        }
+        &:hover
+        {
+          span.coeur_vide
+          {
+            display: none;
+          }
+          span.coeur_plein
+          {
+            display: block;
+            i
+            {
+            font-size: 130%;
+            margin-top: 200%;
+            }
+
+          }
+          
+        }
       }
+      
     }
   }
 
@@ -235,6 +264,133 @@ footer
     }
   }
 
+}
+
+/*pour ordinateur*/
+@media screen and (min-width : 992px)
+{
+
+  header
+  {
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      img{
+      @include marge(10%,0,7%,15%);
+      @include taille_image(50%,40%);
+      }
+    }
+    .localisation{
+      @include marge(2%,5%,0,10%);
+      background-color: $blanc;
+      i{
+        
+        @include marge(16%,10%,0,-10%);
+      }
+    }
+  }
+
+  .presentation_page
+  {
+    @include padding(3%,0 ,3%,0 );
+    h1, p
+    {
+      margin: auto;
+      margin-bottom: 2%;
+    }
+    button{
+      @include padding(2%,2% ,2% ,2%);
+    }
+  }
+
+  .fonctionnement
+  {
+    h1
+    {
+      @include marge(2%,0,3%,45% )
+    }
+    .choix
+    {
+      display: flex;
+      @include marge(0,0 ,2% ,38%);
+      .numero
+      {
+        p
+        {
+          @include marge(0.5%,0 ,0 ,2%);
+          @include padding(1%,1% ,1% ,1% );
+        }
+      }
+      .bulle
+      {
+        @include marge(0,2% ,0 ,5%);
+        @include padding(1%,10% ,1% ,6%);
+        i
+        {
+          @include marge(9%,10%,0%,-10%);
+        }
+      }
+    }
+
+  }
+
+  .restaurants
+  {
+    @include padding(1%,0 ,1% ,0 );
+    h1
+    {
+      @include marge(2%,0,2%,45%)
+    }
+    .carte_restaurant
+    {
+      height: 400px;
+      width: 600px;
+      margin-bottom: 5%;
+      img
+      {
+        height: 400px;
+        width: 600px;
+      }
+      .nouveau
+      {
+        p
+        {
+          @include padding(1%,2%,1%,2% );
+          @include marge(2%,0,0,30%);
+        }
+      }
+      .detail_restaurant
+      {
+        .texte_restaurant
+        {
+          @include marge(0,0 ,0 ,0%);
+          @include padding(2%,40%,2%,0%);
+          p
+          {
+            @include padding(0%,0%,15%,0%);
+          }
+        }
+      }
+    }
+  }
+
+  footer
+  {
+    @include padding(2%, 0 ,2% ,0 );
+    h3
+    {
+      font-size: 160%;
+      @include marge(0,0,2% ,2% );
+    }
+    li
+    {
+      font-size: 100%;
+      i
+      {
+        @include marge(0,1% ,0,0 );
+      }
+    }
+  }
 }
 
 
