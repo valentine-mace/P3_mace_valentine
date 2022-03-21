@@ -365,10 +365,23 @@ footer
         .texte_restaurant
         {
           @include marge(0,0 ,0 ,0%);
-          @include padding(2%,40%,2%,0%);
+          @include padding(1%,40%,1%,0%);
+          font-size: 110%;
           p
           {
             @include padding(0%,0%,15%,0%);
+            
+          }
+        }
+        .coeur
+        {
+          span.coeur_vide
+          {
+            i
+            {
+            font-size: 130%;
+            margin-top: 200%;
+            }
           }
         }
       }
