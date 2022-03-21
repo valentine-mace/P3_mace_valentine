@@ -2,7 +2,8 @@ body {
   margin: auto;
 }
 
-.loader {
+/*loading spinner de la page principale*/
+.loading {
   width: 100%;
   height: 100%;
   background: #989696;
@@ -29,7 +30,7 @@ body {
   }
 }
 
-.loader .spinner {
+.loading .spinner {
   height: 100px;
   width: 100px;
   border-radius: 50%;
