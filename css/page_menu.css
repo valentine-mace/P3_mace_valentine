@@ -171,6 +171,29 @@ main .image_small {
           box-shadow: 2px 2px 12px #484949;
 }
 
+.menu {
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .top_marge {
   margin-top: -40%;
   margin-right: 0%;

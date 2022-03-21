@@ -123,6 +123,22 @@ main
   
 }
 
+.menu {
+    
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+
+
 .top_marge
 {
   @include marge(-40%,0%,0%,0%);
