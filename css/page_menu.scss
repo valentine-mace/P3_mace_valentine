@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
-
 @import "./base/base";
 @import "./utils/variables";
 
@@ -94,6 +92,7 @@ main
       margin-bottom: -3%;
       padding-top: 3%;
       padding-right: 30%;
+      font-weight: 800;
     }
     p
     {
@@ -181,6 +180,95 @@ footer
       {
         @include taille_image(60%,40%);
         @include marge(-7%,60%,0%,350%);
+
+      }
+    }
+  }
+  main
+  {
+    img
+    {
+      @include taille_image(100%,10%);
+      @include marge(-20%,0%,0%,0);
+    }
+    .image_small
+    {
+      @include marge(-50%,0%,0%,0);
+    }
+  }
+  .section_principale
+  {
+    @include padding(4%,6%,4%,6%);
+    .titre
+    {
+      
+      i
+      {
+        font-size: 140%;
+        @include marge(2%,0%,0%,0%);
+
+      }
+    }
+    .extra_marge
+    {
+      
+      @include marge(5%,89%,0%,0%);
+      
+    }
+    .menu
+    {
+      h4
+      {
+        margin-bottom: -1%;
+      }
+    }
+    button
+    {
+      @include marge(5%,40% ,0,40%);
+      @include padding(2%,5%,2% ,5% );
+    }
+    
+  }
+  footer
+  {
+    @include padding(2%, 0 ,1% ,0 );
+    h3
+    {
+      @include marge(0,0,2% ,3% );
+      font-size: 150%;
+
+    }
+    li
+    {
+      font-size: 100%;
+      i
+      {
+        @include marge(0,1% ,0,0 );
+      }
+    }
+
+  }
+}
+
+@media screen and  (min-width : 766px) and (max-width : 991px)
+{
+  header
+  {
+    @include marge(0,0,10%,0);
+    @include padding(0,70%,1%,10%);
+    .fleche
+    {
+      i{
+        @include marge(9%,0,0%,-40%);
+        font-size: 170%;
+      }
+    }
+    .logo
+    {
+      img
+      {
+        @include taille_image(100%,80%);
+        @include marge(-5%,60%,0%,350%);
 
       }
     }
