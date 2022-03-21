@@ -2,6 +2,69 @@ body {
   margin: auto;
 }
 
+.loader {
+  width: 100%;
+  height: 100%;
+  background: #989696;
+  position: fixed;
+  -webkit-animation: 3s 0s both loader;
+          animation: 3s 0s both loader;
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader .spinner {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 8px solid #DEDADA;
+  border-top: 8px solid #9356DC;
+  margin-top: 20%;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 46%;
+  -webkit-animation: 1s 0s 10 both chargement;
+          animation: 1s 0s 10 both chargement;
+}
+
+@-webkit-keyframes chargement {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes chargement {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 header {
   background-color: #fff;
   -webkit-box-shadow: 2px 12px 12px -10px #9C9B82;
