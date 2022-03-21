@@ -189,7 +189,8 @@ header
         font-family: $roboto;
         color: $noir;
         font-size: 90%;
-        @include marge(0,0 ,0 ,5% );
+        @include marge(0,0 ,0 ,-10%);
+        @include padding(0%,20%,0%,10%);
         p{
           @include marge(-10%,0 ,0 ,0);
           @include padding(0%,0%,15%,0%);
@@ -206,7 +207,7 @@ header
           i
           {
           font-size: 130%;
-          margin-top: 200%;
+          margin-top: 120%;
           }
         }
         &:hover
@@ -390,6 +391,71 @@ footer
         @include marge(0,1% ,0,0 );
       }
     }
+  }
+}
+
+@media screen and  (min-width : 766px) and (max-width : 991px)
+{
+  header
+  {
+    display: flex;
+    justify-content: space-between;
+    .logo{
+      img{
+      @include marge(10%,0,7%,0%);
+      @include taille_image(40%,40%);
+      }
+    }
+    .localisation{
+      @include marge(4%,10%,0,0%);
+      background-color: $blanc;
+      i{
+        @include marge(16%,10%,0,-10%);
+      }
+    }
+  }
+  .presentation_page
+  {
+    @include padding(3%,0 ,3%,0 );
+    h1, p
+    {
+      margin: auto;
+      margin-bottom: 2%;
+    }
+    button{
+      @include padding(2%,2% ,2% ,2%);
+    }
+  }
+  .fonctionnement
+  {
+    h1
+    {
+      text-align: center;
+      @include marge(2%,0,3%,0 )
+    }
+    .choix
+    {
+      display: flex;
+      @include marge(0,0%,2% ,30%);
+      .numero
+      {
+        p
+        {
+          @include marge(1%,0 ,0 ,2%);
+          @include padding(1%,1% ,1% ,1% );
+        }
+      }
+      .bulle
+      {
+        @include marge(0,2% ,0 ,5%);
+        @include padding(1%,10% ,1% ,10%);
+        i
+        {
+          @include marge(9%,10%,0%,-10%);
+        }
+      }
+    }
+
   }
 }
 
