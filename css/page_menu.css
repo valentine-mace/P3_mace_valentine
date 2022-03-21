@@ -171,27 +171,34 @@ main .image_small {
           box-shadow: 2px 2px 12px #484949;
 }
 
-.menu {
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
-}
-
-@-webkit-keyframes fadein {
-  from {
+@-webkit-keyframes anim {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes fadein {
-  from {
+@keyframes anim {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
+}
+
+.entrees {
+  opacity: 0;
+  -webkit-animation: anim 5s infinite 1s;
+          animation: anim 5s infinite 1s;
+}
+
+.plats {
+  opacity: 0;
+  -webkit-animation: anim 5s infinite 2s;
+          animation: anim 5s infinite 2s;
 }
 
 .top_marge {

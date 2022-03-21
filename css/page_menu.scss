@@ -123,19 +123,32 @@ main
   
 }
 
-.menu {
-    
-  animation: fadein 4s;
+@keyframes anim {
+  0%  {opacity:0;}
+  100% {opacity:1;}
+ }
+.entrees{
+  opacity:0;
+  animation:anim 5s infinite 1s;
+}
+.plats{
+  opacity:0;
+  animation:anim 5s infinite 2s;
 }
 
-@keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
+
+
+// .plats{
+//   opacity:0;
+//   transition-delay: anim10s;
+//   animation: anim 1s linear forwards 1s;
+ 
+// }
+// @keyframes anim {
+//  0%  {opacity:0;}
+//  100% {opacity:1;}
+// }
+
 
 
 
