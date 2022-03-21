@@ -594,5 +594,79 @@ footer li a {
     margin-bottom: 0%;
     margin-left: -10%;
   }
+  .restaurants {
+    padding-top: 1%;
+    padding-right: 0;
+    padding-bottom: 1%;
+    padding-left: 0;
+  }
+  .restaurants h1 {
+    margin-top: 2%;
+    margin-right: 0;
+    margin-bottom: 2%;
+    margin-left: 45%;
+  }
+  .restaurants .carte_restaurant {
+    height: 400px;
+    width: 600px;
+    margin-bottom: 15%;
+  }
+  .restaurants .carte_restaurant img {
+    height: 400px;
+    width: 600px;
+  }
+  .restaurants .carte_restaurant .nouveau p {
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    margin-top: 2%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 63%;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0%;
+    padding-top: 1%;
+    padding-right: 40%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    font-size: 110%;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .texte_restaurant p {
+    padding-top: 0%;
+    padding-right: 0%;
+    padding-bottom: 15%;
+    padding-left: 0%;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .coeur span.coeur_vide i {
+    font-size: 130%;
+    margin-top: 200%;
+  }
+  footer {
+    padding-top: 2%;
+    padding-right: 0;
+    padding-bottom: 2%;
+    padding-left: 0;
+  }
+  footer h3 {
+    font-size: 160%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 2%;
+    margin-left: 2%;
+  }
+  footer li {
+    font-size: 100%;
+  }
+  footer li i {
+    margin-top: 0;
+    margin-right: 1%;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=page_principale.css.map */

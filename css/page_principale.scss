@@ -470,6 +470,76 @@ footer
     }
 
   }
+  .restaurants
+  {
+    @include padding(1%,0 ,1% ,0 );
+    h1
+    {
+      @include marge(2%,0,2%,45%)
+    }
+    .carte_restaurant
+    {
+      height: 400px;
+      width: 600px;
+      margin-bottom: 15%;
+      img
+      {
+        height: 400px;
+        width: 600px;
+      }
+      .nouveau
+      {
+        p
+        {
+          @include padding(2%,3%,2%,3% );
+          @include marge(2%,0,0,63%);
+        }
+      }
+      .detail_restaurant
+      {
+        .texte_restaurant
+        {
+          @include marge(0,0 ,0 ,0%);
+          @include padding(1%,40%,1%,0%);
+          font-size: 110%;
+          p
+          {
+            @include padding(0%,0%,15%,0%);
+            
+          }
+        }
+        .coeur
+        {
+          span.coeur_vide
+          {
+            i
+            {
+            font-size: 130%;
+            margin-top: 200%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer
+  {
+    @include padding(2%, 0 ,2% ,0 );
+    h3
+    {
+      font-size: 160%;
+      @include marge(0,0,2% ,2% );
+    }
+    li
+    {
+      font-size: 100%;
+      i
+      {
+        @include marge(0,1% ,0,0 );
+      }
+    }
+  }
 }
 
 
