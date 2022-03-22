@@ -82,7 +82,12 @@ main .image_small {
   font-size: 160%;
 }
 
+.section_principale .titre .coeur {
+  position: relative;
+}
+
 .section_principale .titre .coeur .coeur_vide {
+  position: absolute;
   font-size: 140%;
   margin-top: 90%;
   margin-right: 0%;

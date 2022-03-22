@@ -61,7 +61,9 @@ main
     }
     .coeur
     {
+      position: relative;
       .coeur_vide{
+      position: absolute;
       font-size: 140%;
       @include marge(90%,0%,0%,0%);
       }
