@@ -82,12 +82,44 @@ main .image_small {
   font-size: 160%;
 }
 
-.section_principale .titre i {
+.section_principale .titre .coeur .coeur_vide {
   font-size: 140%;
-  margin-top: 7%;
+  margin-top: 90%;
   margin-right: 0%;
   margin-bottom: 0%;
   margin-left: 0%;
+}
+
+.section_principale .titre .coeur .coeur_plein {
+  opacity: 0;
+  position: absolute;
+  margin-top: 5.5%;
+  margin-left: -5.5%;
+  font-size: 140%;
+}
+
+.section_principale .titre .coeur .coeur_plein:hover {
+  opacity: 1;
+  -webkit-animation: 1s 0s 1 both transition;
+          animation: 1s 0s 1 both transition;
+}
+
+@-webkit-keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section_principale .type {
@@ -169,36 +201,6 @@ main .image_small {
           filter: brightness(120%);
   -webkit-box-shadow: 2px 2px 12px #484949;
           box-shadow: 2px 2px 12px #484949;
-}
-
-@-webkit-keyframes anim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes anim {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.entrees {
-  opacity: 0;
-  -webkit-animation: anim 5s infinite 1s;
-          animation: anim 5s infinite 1s;
-}
-
-.plats {
-  opacity: 0;
-  -webkit-animation: anim 5s infinite 2s;
-          animation: anim 5s infinite 2s;
 }
 
 .top_marge {
@@ -296,12 +298,17 @@ footer li a {
     padding-bottom: 4%;
     padding-left: 6%;
   }
-  .section_principale .titre i {
+  .section_principale .titre .coeur .coeur_vide {
     font-size: 140%;
-    margin-top: 2%;
+    margin-top: 90%;
     margin-right: 0%;
     margin-bottom: 0%;
     margin-left: 0%;
+  }
+  .section_principale .titre .coeur .coeur_plein {
+    margin-top: 1.3%;
+    margin-left: -1.5%;
+    font-size: 140%;
   }
   .section_principale .extra_marge {
     margin-top: 5%;
@@ -392,12 +399,18 @@ footer li a {
     padding-bottom: 4%;
     padding-left: 6%;
   }
-  .section_principale .titre i {
+  .section_principale .titre .coeur .coeur_vide {
     font-size: 140%;
-    margin-top: 2%;
+    margin-top: 90%;
     margin-right: 0%;
     margin-bottom: 0%;
     margin-left: 0%;
+  }
+  .section_principale .titre .coeur .coeur_plein {
+    opacity: 0;
+    margin-top: 2.7%;
+    margin-left: -2.7%;
+    font-size: 140%;
   }
   .section_principale .extra_marge {
     margin-top: 5%;
