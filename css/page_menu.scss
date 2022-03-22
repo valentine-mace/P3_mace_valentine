@@ -144,31 +144,25 @@ main
   
 }
 
-// @keyframes anim {
-//   0%  {opacity:0;}
-//   100% {opacity:1;}
-//  }
-// .entrees{
-//   opacity:0;
-//   animation:anim 5s infinite 1s;
-// }
-// .plats{
-//   opacity:0;
-//   animation:anim 5s infinite 2s;
-// }
+ @keyframes apparition_menu {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+.entrees{
+  animation: 1s 1s 1 both apparition_menu;
+}
+.plats{
+  animation: 1s 3s 1 both apparition_menu;
+}
+.desserts{
+  animation: 1s 5s 1 both apparition_menu;
+}
 
 
-
-// .plats{
-//   opacity:0;
-//   transition-delay: anim10s;
-//   animation: anim 1s linear forwards 1s;
- 
-// }
-// @keyframes anim {
-//  0%  {opacity:0;}
-//  100% {opacity:1;}
-// }
 
 
 

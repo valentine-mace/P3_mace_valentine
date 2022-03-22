@@ -203,6 +203,39 @@ main .image_small {
           box-shadow: 2px 2px 12px #484949;
 }
 
+@-webkit-keyframes apparition_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition_menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.entrees {
+  -webkit-animation: 1s 1s 1 both apparition_menu;
+          animation: 1s 1s 1 both apparition_menu;
+}
+
+.plats {
+  -webkit-animation: 1s 3s 1 both apparition_menu;
+          animation: 1s 3s 1 both apparition_menu;
+}
+
+.desserts {
+  -webkit-animation: 1s 5s 1 both apparition_menu;
+          animation: 1s 5s 1 both apparition_menu;
+}
+
 .top_marge {
   margin-top: -40%;
   margin-right: 0%;
