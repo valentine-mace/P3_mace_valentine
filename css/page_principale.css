@@ -3,7 +3,12 @@ body {
 }
 
 /*loading spinner de la page principale*/
-.spinner {
+body {
+  -webkit-animation: test2 5s 1;
+          animation: test2 5s 1;
+}
+
+body .spinner {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   content: "";
@@ -56,6 +61,24 @@ body {
   }
   to {
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes test2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes test2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
