@@ -202,36 +202,34 @@ header
       }
       .coeur
       {
-        span.coeur_plein
+        .coeur_vide
         {
-          display: none;
-        }
-        span.coeur_vide
-        {
-          i
-          {
-          font-size: 130%;
-          margin-top: 120%;
-          }
-        }
-        &:hover
-        {
-          span.coeur_vide
-          {
-            display: none;
-          }
-          span.coeur_plein
-          {
-            display: block;
-            i
-            {
-            font-size: 130%;
-            margin-top: 200%;
-            }
 
+          font-size: 130%;
+          margin-top: 130%;
+          color: $noir;
+        }
+        .coeur_plein{
+          opacity: 0;
+          position: absolute;
+          margin-top: 7.3%;
+          margin-left: -6%;
+          font-size: 130%;
+          &:hover {
+            opacity: 1;
+            animation: 1s 0s 1 both transition;
+            @keyframes transition {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
           }
           
         }
+        
       }
       
     }
@@ -533,14 +531,33 @@ footer
         }
         .coeur
         {
-          span.coeur_vide
+          .coeur_vide
           {
-            i
-            {
+
             font-size: 130%;
-            margin-top: 200%;
-            }
+            margin-top: 150%;
           }
+          .coeur_plein{
+            opacity: 0;
+            position: absolute;
+            margin-top: 5.1%;
+            margin-left: -3.5%;
+            font-size: 130%;
+            &:hover {
+              opacity: 1;
+              animation: 1s 0s 1 both transition;
+              @keyframes transition {
+                from {
+                  opacity: 0;
+                }
+                to {
+                  opacity: 1;
+                }
+              }
+            }
+            
+          }
+          
         }
       }
     }
