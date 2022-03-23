@@ -303,7 +303,7 @@ footer
 {
   body{
     .spinner{
-      margin-left: 45%;
+      margin-left: 43%;
       margin-top: 20%;
     }
   }
@@ -464,6 +464,13 @@ footer
 
 @media screen and  (min-width : 766px) and (max-width : 991px)
 {
+  body
+  {
+    .spinner
+    {
+      margin-left: 35%;
+    }
+  }
   header
   {
     display: flex;
