@@ -117,15 +117,22 @@ main
       padding-right: 30%;
       font-weight: 800;
       display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .prix_accompagnement
     {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      p
+      .test1
       {
         font-size: 90%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .test2{
+        transition: transform 530ms;
       }
     }
     .check{
@@ -137,21 +144,28 @@ main
       border-bottom-right-radius: 10px;
       position: absolute;
       padding: 7%;
-      @include marge(-17.5%,0%,0%,82%);
+      padding-top:8%;
+      @include marge(-19%,0%,0%,70%);
       i{
         color: $blanc;
         font-size: large;
+        transition: transform 530ms;
       }
       opacity: 0;
-      transition: transform 330ms ease-in-out;
+      transition: transform 530ms ease-in-out;
     }
     &:hover{
       .check{
         opacity: 1;
-        transform: translate(-50px);
+        transform: translate(-6%);
+        i{
+          transform: rotate(360deg);
+        }
       }
       .prix_accompagnement{
-        transform: translate(-50px);
+        .test2{
+          transform: translate(-300%);
+        }
       }
     }
   }

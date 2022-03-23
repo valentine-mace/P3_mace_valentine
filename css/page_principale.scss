@@ -423,6 +423,11 @@ footer
             margin-top: 5.1%;
             margin-left: -3.5%;
             font-size: 130%;
+            i{
+            background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            }
             &:hover {
               opacity: 1;
               animation: 1s 0s 1 both transition;

@@ -560,6 +560,12 @@ footer li a {
     margin-left: -3.5%;
     font-size: 130%;
   }
+  .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_plein i {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
   .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_plein:hover {
     opacity: 1;
     -webkit-animation: 1s 0s 1 both transition;

@@ -166,6 +166,8 @@ main .image_small {
   padding-right: 30%;
   font-weight: 800;
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .section_principale .menu .prix_accompagnement {
@@ -180,8 +182,17 @@ main .image_small {
           align-items: center;
 }
 
-.section_principale .menu .prix_accompagnement p {
+.section_principale .menu .prix_accompagnement .test1 {
   font-size: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section_principale .menu .prix_accompagnement .test2 {
+  -webkit-transition: -webkit-transform 530ms;
+  transition: -webkit-transform 530ms;
+  transition: transform 530ms;
+  transition: transform 530ms, -webkit-transform 530ms;
 }
 
 .section_principale .menu .check {
@@ -199,31 +210,41 @@ main .image_small {
   border-bottom-right-radius: 10px;
   position: absolute;
   padding: 7%;
-  margin-top: -17.5%;
+  padding-top: 8%;
+  margin-top: -19%;
   margin-right: 0%;
   margin-bottom: 0%;
-  margin-left: 82%;
+  margin-left: 70%;
   opacity: 0;
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  -webkit-transition: -webkit-transform 530ms ease-in-out;
+  transition: -webkit-transform 530ms ease-in-out;
+  transition: transform 530ms ease-in-out;
+  transition: transform 530ms ease-in-out, -webkit-transform 530ms ease-in-out;
 }
 
 .section_principale .menu .check i {
   color: #fff;
   font-size: large;
+  -webkit-transition: -webkit-transform 530ms;
+  transition: -webkit-transform 530ms;
+  transition: transform 530ms;
+  transition: transform 530ms, -webkit-transform 530ms;
 }
 
 .section_principale .menu:hover .check {
   opacity: 1;
-  -webkit-transform: translate(-50px);
-          transform: translate(-50px);
+  -webkit-transform: translate(-6%);
+          transform: translate(-6%);
 }
 
-.section_principale .menu:hover .prix_accompagnement {
-  -webkit-transform: translate(-50px);
-          transform: translate(-50px);
+.section_principale .menu:hover .check i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.section_principale .menu:hover .prix_accompagnement .test2 {
+  -webkit-transform: translate(-300%);
+          transform: translate(-300%);
 }
 
 .section_principale button {
