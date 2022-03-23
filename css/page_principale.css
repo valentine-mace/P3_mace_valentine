@@ -1,17 +1,27 @@
 body {
   margin: auto;
+  position: relative;
+  opacity: 0;
+  -webkit-animation: test 4s 1;
+          animation: test 4s 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes test {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes test {
+  to {
+    opacity: 1;
+  }
 }
 
 /*loading spinner de la page principale*/
-body {
-  -webkit-animation: test2 5s 1;
-          animation: test2 5s 1;
-  position: relative;
-}
-
 body .spinner {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   content: "";
   position: absolute;
   margin-top: 60%;
@@ -21,65 +31,25 @@ body .spinner {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  -webkit-animation: loading 2s 2, test 4s 1;
-          animation: loading 2s 2, test 4s 1;
+  -webkit-animation: loading 2s 2;
+          animation: loading 2s 2;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes loading {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
   to {
+    visibility: hidden;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 
 @keyframes loading {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
   to {
+    visibility: hidden;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes test {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes test {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes test2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes test2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
