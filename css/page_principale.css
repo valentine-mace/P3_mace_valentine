@@ -275,6 +275,13 @@ header .localisation i {
   border-radius: 30px;
 }
 
+.restaurants .carte_restaurant .nouveau {
+  margin-top: 4%;
+  margin-right: 10%;
+  margin-bottom: 0;
+  margin-left: 70%;
+}
+
 .restaurants .carte_restaurant .nouveau p {
   font-size: 80%;
   color: #2ABEA4;
@@ -284,10 +291,6 @@ header .localisation i {
   padding-right: 4%;
   padding-bottom: 2%;
   padding-left: 4%;
-  margin-top: 4%;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 65%;
   position: absolute;
 }
 
@@ -522,15 +525,17 @@ footer li a {
     height: 400px;
     width: 600px;
   }
+  .restaurants .carte_restaurant .nouveau {
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    margin-left: 75%;
+  }
   .restaurants .carte_restaurant .nouveau p {
     padding-top: 1%;
     padding-right: 2%;
     padding-bottom: 1%;
     padding-left: 2%;
-    margin-top: 2%;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 30%;
   }
   .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
     margin-top: 0;
@@ -559,12 +564,8 @@ footer li a {
     margin-top: 5.1%;
     margin-left: -3.5%;
     font-size: 130%;
-  }
-  .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_plein i {
-    background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
   }
   .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_plein:hover {
     opacity: 1;
@@ -723,15 +724,17 @@ footer li a {
     height: 400px;
     width: 600px;
   }
+  .restaurants .carte_restaurant .nouveau {
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 0;
+    margin-left: 75%;
+  }
   .restaurants .carte_restaurant .nouveau p {
     padding-top: 2%;
     padding-right: 3%;
     padding-bottom: 2%;
     padding-left: 3%;
-    margin-top: 2%;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 63%;
   }
   .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
     margin-top: 0;

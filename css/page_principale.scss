@@ -196,6 +196,7 @@ header
     }
     .nouveau 
     {
+      @include marge(4%,10%,0,70%);
       p
       {
       font-size: 80%;
@@ -203,7 +204,6 @@ header
       background-color: $vert;
       font-weight: 800;
       @include padding(2%,4%,2%,4% );
-      @include marge(4%,0,0,65%);
       position:absolute;
       }
     }
@@ -390,10 +390,10 @@ footer
       }
       .nouveau
       {
+        @include marge(2%,10%,0,75%);
         p
         {
           @include padding(1%,2%,1%,2% );
-          @include marge(2%,0,0,30%);
         }
       }
       .detail_restaurant
@@ -423,11 +423,8 @@ footer
             margin-top: 5.1%;
             margin-left: -3.5%;
             font-size: 130%;
-            i{
-            background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-            }
+            //PROB COULEUR ICI
+            background: linear-gradient($rose,$violet);
             &:hover {
               opacity: 1;
               animation: 1s 0s 1 both transition;
@@ -556,10 +553,10 @@ footer
       }
       .nouveau
       {
+        @include marge(2%,5%,0,75%);
         p
         {
           @include padding(2%,3%,2%,3% );
-          @include marge(2%,0,0,63%);
         }
       }
       .detail_restaurant
