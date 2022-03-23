@@ -84,21 +84,18 @@ main .image_small {
 
 .section_principale .titre .coeur {
   position: relative;
+  margin-top: 7%;
+  margin-right: 6%;
 }
 
 .section_principale .titre .coeur .coeur_vide {
   position: absolute;
   font-size: 140%;
-  margin-top: 90%;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  margin-left: 0%;
 }
 
 .section_principale .titre .coeur .coeur_plein {
   opacity: 0;
   position: absolute;
-  margin-top: 5.5%;
   margin-left: -5.5%;
   font-size: 140%;
 }
