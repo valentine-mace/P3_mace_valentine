@@ -102,8 +102,8 @@ main .image_small {
 
 .section_principale .titre .coeur .coeur_plein:hover {
   opacity: 1;
-  -webkit-animation: 1s 0s 1 both transition;
-          animation: 1s 0s 1 both transition;
+  -webkit-animation: 2s 0s 1 both transition;
+          animation: 2s 0s 1 both transition;
 }
 
 @-webkit-keyframes transition {
@@ -165,10 +165,7 @@ main .image_small {
   padding-top: 3%;
   padding-right: 30%;
   font-weight: 800;
-}
-
-.section_principale .menu p {
-  font-size: 90%;
+  display: block;
 }
 
 .section_principale .menu .prix_accompagnement {
@@ -178,6 +175,55 @@ main .image_small {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_principale .menu .prix_accompagnement p {
+  font-size: 90%;
+}
+
+.section_principale .menu .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: absolute;
+  padding: 7%;
+  margin-top: -17.5%;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 82%;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+}
+
+.section_principale .menu .check i {
+  color: #fff;
+  font-size: large;
+}
+
+.section_principale .menu:hover .check {
+  opacity: 1;
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
+}
+
+.section_principale .menu:hover .prix_accompagnement {
+  -webkit-transform: translate(-50px);
+          transform: translate(-50px);
 }
 
 .section_principale button {

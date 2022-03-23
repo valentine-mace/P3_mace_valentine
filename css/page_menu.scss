@@ -75,7 +75,7 @@ main
         font-size: 140%;
         &:hover {
           opacity: 1;
-          animation: 1s 0s 1 both transition;
+          animation: 2s 0s 1 both transition;
           @keyframes transition {
             from {
               opacity: 0;
@@ -116,15 +116,43 @@ main
       padding-top: 3%;
       padding-right: 30%;
       font-weight: 800;
-    }
-    p
-    {
-      font-size: 90%;
+      display: block;
     }
     .prix_accompagnement
     {
       display: flex;
       justify-content: space-between;
+      align-items: center;
+      p
+      {
+        font-size: 90%;
+      }
+    }
+    .check{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $vert;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      position: absolute;
+      padding: 7%;
+      @include marge(-17.5%,0%,0%,82%);
+      i{
+        color: $blanc;
+        font-size: large;
+      }
+      opacity: 0;
+      transition: transform 330ms ease-in-out;
+    }
+    &:hover{
+      .check{
+        opacity: 1;
+        transform: translate(-50px);
+      }
+      .prix_accompagnement{
+        transform: translate(-50px);
+      }
     }
   }
   button
