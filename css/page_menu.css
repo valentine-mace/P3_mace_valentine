@@ -163,7 +163,7 @@ main .image_small {
 .section_principale .menu h4 {
   margin-bottom: -3%;
   padding-top: 3%;
-  padding-right: 30%;
+  padding-right: 20%;
   font-weight: 800;
   display: block;
   overflow: hidden;
@@ -184,8 +184,10 @@ main .image_small {
 
 .section_principale .menu .prix_accompagnement .test1 {
   font-size: 90%;
+  width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .section_principale .menu .prix_accompagnement .test2 {
@@ -245,6 +247,20 @@ main .image_small {
 .section_principale .menu:hover .prix_accompagnement .test2 {
   -webkit-transform: translate(-300%);
           transform: translate(-300%);
+}
+
+.section_principale .menu:hover .prix_accompagnement .test1 {
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.section_principale .menu:hover h4 {
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .section_principale button {
