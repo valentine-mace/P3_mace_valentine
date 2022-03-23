@@ -328,6 +328,35 @@ footer
       h4
       {
         margin-bottom: -1%;
+        
+      }
+      .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $vert;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        padding: 3%;
+        @include marge(-6.4%,0%,0%,80.5%);
+        i{
+          color: $blanc;
+          font-size: larger;
+          transition: transform 530ms;
+        }
+        opacity: 0;
+        transition: transform 530ms ease-in-out;
+      }
+      &:hover{
+        h4{
+          width:270px;
+        }
+        .prix_accompagnement{
+          .menu_accompagnement{
+            width:270px;
+          }
+        }
       }
     }
     button
