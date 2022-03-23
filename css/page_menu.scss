@@ -125,15 +125,15 @@ main
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .test1
+      .menu_accompagnement
       {
         font-size: 90%;
-        width:250px;
+        width:270px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      .test2{
+      .menu_prix{
         transition: transform 530ms;
       }
     }
@@ -165,10 +165,10 @@ main
         }
       }
       .prix_accompagnement{
-        .test2{
+        .menu_prix{
           transform: translate(-300%);
         }
-        .test1{
+        .menu_accompagnement{
           width:180px;
           overflow: hidden;
           text-overflow: ellipsis;

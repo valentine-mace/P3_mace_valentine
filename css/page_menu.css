@@ -182,15 +182,15 @@ main .image_small {
           align-items: center;
 }
 
-.section_principale .menu .prix_accompagnement .test1 {
+.section_principale .menu .prix_accompagnement .menu_accompagnement {
   font-size: 90%;
-  width: 250px;
+  width: 270px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.section_principale .menu .prix_accompagnement .test2 {
+.section_principale .menu .prix_accompagnement .menu_prix {
   -webkit-transition: -webkit-transform 530ms;
   transition: -webkit-transform 530ms;
   transition: transform 530ms;
@@ -244,12 +244,12 @@ main .image_small {
           transform: rotate(360deg);
 }
 
-.section_principale .menu:hover .prix_accompagnement .test2 {
+.section_principale .menu:hover .prix_accompagnement .menu_prix {
   -webkit-transform: translate(-300%);
           transform: translate(-300%);
 }
 
-.section_principale .menu:hover .prix_accompagnement .test1 {
+.section_principale .menu:hover .prix_accompagnement .menu_accompagnement {
   width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
