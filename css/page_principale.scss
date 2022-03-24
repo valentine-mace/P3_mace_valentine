@@ -569,8 +569,8 @@ footer
       {
         .texte_restaurant
         {
-          @include marge(0,0 ,0 ,0%);
-          @include padding(1%,40%,1%,0%);
+          @include marge(0,0 ,0 ,-5%);
+          @include padding(1%,0%,1%,0%);
           font-size: 110%;
           p
           {
