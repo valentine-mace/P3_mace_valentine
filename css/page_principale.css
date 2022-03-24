@@ -251,6 +251,10 @@ header .localisation i {
   text-decoration: none;
 }
 
+.restaurants .lien_resto {
+  padding-right: 30%;
+}
+
 .restaurants h1 {
   font-weight: 800;
   font-size: 130%;
@@ -317,7 +321,7 @@ header .localisation i {
   margin-bottom: 0;
   margin-left: -10%;
   padding-top: 0%;
-  padding-right: 20%;
+  padding-right: 0%;
   padding-bottom: 0%;
   padding-left: 10%;
 }
@@ -333,9 +337,13 @@ header .localisation i {
   padding-left: 0%;
 }
 
+.restaurants .carte_restaurant .detail_restaurant .test {
+  margin-left: 0%;
+}
+
 .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_vide {
   font-size: 130%;
-  margin-top: 130%;
+  margin-top: 120%;
   color: black;
 }
 

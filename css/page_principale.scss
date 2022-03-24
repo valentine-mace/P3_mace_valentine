@@ -175,6 +175,9 @@ header
   {
     text-decoration: none;
   }
+  .lien_resto{
+    padding-right: 30%;
+  }
   h1
   {
     font-weight: 800;
@@ -223,11 +226,14 @@ header
         color: $noir;
         font-size: 90%;
         @include marge(0,0 ,0 ,-10%);
-        @include padding(0%,20%,0%,10%);
+        @include padding(0%,0%,0%,10%);
         p{
           @include marge(-10%,0 ,0 ,0);
           @include padding(0%,0%,15%,0%);
         }
+      }
+      .test{
+        margin-left: 0%;
       }
       .coeur
       {
@@ -235,7 +241,7 @@ header
         {
 
           font-size: 130%;
-          margin-top: 130%;
+          margin-top: 120%;
           color: $noir;
         }
         .coeur_plein{
