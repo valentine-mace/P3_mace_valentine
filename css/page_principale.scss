@@ -235,24 +235,22 @@ header
       .test{
         margin-left: 0%;
       }
-      .coeur
-      {
-        .coeur_vide
-        {
-
-          font-size: 130%;
-          margin-top: 120%;
-          color: $noir;
-        }
-        .coeur_plein{
+      .coeur {
+        position: absolute;
+        margin-top: 7%;
+        margin-left: -7%;
+        .fas {
           opacity: 0;
-          position: absolute;
-          margin-top: 7.3%;
-          margin-left: -6%;
-          font-size: 130%;
+          transition: all 0.2s linear;
+          background: linear-gradient($violet,$rose);
+          //pour enlever ce qui est en trop
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          color: transparent;
+          transform: scale(1.1);
           &:hover {
             opacity: 1;
-            animation: 1s 0s 1 both transition;
+            animation: 0.8s 0s 1 both transition;
             @keyframes transition {
               from {
                 opacity: 0;
@@ -262,9 +260,14 @@ header
               }
             }
           }
-          
         }
-        
+      }
+      .coeur .fas,
+      .coeur .far {
+        position: absolute;
+        font-size: larger;
+        color: $noir;
+        margin-top: -20%;
       }
       
     }
@@ -579,36 +582,6 @@ footer
             @include padding(0%,0%,15%,0%);
             
           }
-        }
-        .coeur
-        {
-          .coeur_vide
-          {
-
-            font-size: 130%;
-            margin-top: 150%;
-          }
-          .coeur_plein{
-            opacity: 0;
-            position: absolute;
-            margin-top: 5.1%;
-            margin-left: -3.5%;
-            font-size: 130%;
-            &:hover {
-              opacity: 1;
-              animation: 1s 0s 1 both transition;
-              @keyframes transition {
-                from {
-                  opacity: 0;
-                }
-                to {
-                  opacity: 1;
-                }
-              }
-            }
-            
-          }
-          
         }
       }
     }
