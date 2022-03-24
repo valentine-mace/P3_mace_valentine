@@ -577,6 +577,7 @@ footer li a {
   .restaurants .carte_restaurant .detail_restaurant .coeur {
     position: absolute;
     margin-top: 5%;
+    margin-left: 2%;
   }
   .restaurants .carte_restaurant .detail_restaurant .coeur .fas {
     opacity: 0;

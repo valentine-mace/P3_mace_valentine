@@ -59,23 +59,22 @@ main
       font-family: $shrikhand;
       font-size: 160%;
     }
-    .coeur
-    {
+    .coeur {
       position: relative;
-      margin-top: 7%;
+      margin-top: 8%;
       margin-right: 6%;
-      .coeur_vide{
-      position: absolute;
-      font-size: 140%;
-      }
-      .coeur_plein{
+      .fas {
         opacity: 0;
-        position: absolute;
-        margin-left: -5.5%;
-        font-size: 140%;
+        transition: all 0.2s linear;
+        background: linear-gradient($violet,$rose);
+        //pour enlever ce qui est en trop
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        transform: scale(1.1);
         &:hover {
           opacity: 1;
-          animation: 2s 0s 1 both transition;
+          animation: 0.8s 0s 1 both transition;
           @keyframes transition {
             from {
               opacity: 0;
@@ -86,7 +85,13 @@ main
           }
         }
       }
-
+    }
+    .coeur .fas,
+    .coeur .far {
+      position: absolute;
+      font-size: larger;
+      color: $noir;
+      margin-top: -20%;
     }
   }
   .type
@@ -305,16 +310,7 @@ footer
     {
       .coeur
       {
-        .coeur_vide{
-        font-size: 140%;
-        @include marge(90%,0%,0%,0%);
-        }
-        .coeur_plein{
-          margin-top: 1.3%;
-          margin-left: -1.5%;
-          font-size: 140%;
-        }
-  
+        margin-top: 3%;
       }
     }
     .extra_marge
@@ -429,17 +425,7 @@ footer
     {
       .coeur
       {
-        .coeur_vide{
-        font-size: 140%;
-        @include marge(90%,0%,0%,0%);
-        }
-        .coeur_plein{
-          opacity: 0;
-          margin-top: 2.7%;
-          margin-left: -2.7%;
-          font-size: 140%;
-        }
-  
+        margin-top: 3%;
       }
     }
     .extra_marge
