@@ -427,6 +427,7 @@ footer
             transition: all 0.2s linear;
             background: linear-gradient($violet,$rose);
             //pour enlever ce qui est en trop
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
