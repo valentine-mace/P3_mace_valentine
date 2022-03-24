@@ -565,16 +565,46 @@ footer li a {
     font-size: 130%;
     margin-top: 150%;
   }
-  .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_plein {
-    opacity: 0;
-    position: absolute;
-    margin-top: 5.1%;
-    margin-left: -3.5%;
-    font-size: 130%;
+  .restaurants .carte_restaurant .detail_restaurant .coeur .heart-shape {
+    position: relative;
+    width: 12px;
+    height: 12px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
     background: linear-gradient(#FF79DA, #9356DC);
+    margin-top: -75%;
+    margin-left: 20%;
+    opacity: 0;
   }
-  .restaurants .carte_restaurant .detail_restaurant .coeur .coeur_plein:hover {
+  .restaurants .carte_restaurant .detail_restaurant .coeur .heart-shape:before,
+  .restaurants .carte_restaurant .detail_restaurant .coeur .heart-shape:after {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    content: '';
+    border-radius: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-color: 1;
+    border: none;
+    margin-left: 10%;
+    opacity: 0;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .coeur .heart-shape:before {
+    bottom: 0px;
+    left: -9px;
+    border: none;
+    opacity: 0;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .coeur .heart-shape:after {
+    top: -7px;
+    right: 0px;
+    margin-top: -10%;
+    border: none;
+    opacity: 0;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .coeur:hover .heart-shape, .restaurants .carte_restaurant .detail_restaurant .coeur:hover .heart-shape:after, .restaurants .carte_restaurant .detail_restaurant .coeur:hover .heart-shape:before {
     opacity: 1;
     -webkit-animation: 1s 0s 1 both transition;
             animation: 1s 0s 1 both transition;

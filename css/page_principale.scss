@@ -423,18 +423,55 @@ footer
             font-size: 130%;
             margin-top: 150%;
           }
-          .coeur_plein{
-            opacity: 0;
-            position: absolute;
-            margin-top: 5.1%;
-            margin-left: -3.5%;
-            font-size: 130%;
-            //PROB COULEUR ICI
+          .heart-shape{
+            position: relative;
+            width: 12px;
+            height: 12px;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
             background: linear-gradient($rose,$violet);
-            &:hover {
+            margin-top: -75%;
+            margin-left: 20%;
+            opacity: 0;
+          }
+          .heart-shape:before,
+          .heart-shape:after{
+            position: absolute;
+            width: 13px;
+            height: 13px;
+            content: '';
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            background: linear-gradient($rose,$violet);
+            background-color: 1;
+            border: none;
+            margin-left: 10%;
+            opacity: 0;
+          }
+          .heart-shape:before{
+            bottom: 0px;
+            left: -9px;
+            border: none;
+            opacity: 0;
+          }
+          .heart-shape:after{
+            top: -7px;
+            right: 0px;
+            margin-top: -10%;
+            border: none;
+            opacity: 0;
+          }
+          &:hover{
+            .heart-shape, .heart-shape:after, .heart-shape:before{
               opacity: 1;
               animation: 1s 0s 1 both transition;
-              @keyframes transition {
+              @keyframes transition 
+              {
                 from {
                   opacity: 0;
                 }
@@ -443,8 +480,30 @@ footer
                 }
               }
             }
-            
           }
+          
+          // .coeur_plein{
+          //   opacity: 0;
+          //   position: absolute;
+          //   margin-top: 5.1%;
+          //   margin-left: -3.5%;
+          //   font-size: 130%;
+          //   //PROB COULEUR ICI
+          //   background: linear-gradient($rose,$violet);
+          //   &:hover {
+          //     opacity: 1;
+          //     animation: 1s 0s 1 both transition;
+          //     @keyframes transition {
+          //       from {
+          //         opacity: 0;
+          //       }
+          //       to {
+          //         opacity: 1;
+          //       }
+          //     }
+          //   }
+            
+          // }
           
         }
       }
