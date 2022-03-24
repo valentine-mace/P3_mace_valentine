@@ -420,7 +420,6 @@ footer li a {
   color: #fff;
 }
 
-/*pour ordinateur*/
 @media screen and (min-width: 992px) {
   body .spinner {
     margin-left: 43%;
