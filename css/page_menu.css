@@ -569,6 +569,39 @@ footer li a {
   .section_principale .menu h4 {
     margin-bottom: -1%;
   }
+  .section_principale .menu .check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #99E2D0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    padding: 5%;
+    margin-top: -11%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    margin-left: 76%;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 530ms ease-in-out;
+    transition: -webkit-transform 530ms ease-in-out;
+    transition: transform 530ms ease-in-out;
+    transition: transform 530ms ease-in-out, -webkit-transform 530ms ease-in-out;
+  }
+  .section_principale .menu .check i {
+    color: #fff;
+    font-size: larger;
+    -webkit-transition: -webkit-transform 530ms;
+    transition: -webkit-transform 530ms;
+    transition: transform 530ms;
+    transition: transform 530ms, -webkit-transform 530ms;
+  }
   .section_principale button {
     margin-top: 5%;
     margin-right: 40%;

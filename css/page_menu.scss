@@ -226,11 +226,6 @@ main
   animation: 1s 5s 1 both apparition_menu;
 }
 
-
-
-
-
-
 .top_marge
 {
   @include marge(-40%,0%,0%,0%);
@@ -440,6 +435,24 @@ footer
       h4
       {
         margin-bottom: -1%;
+      }
+      .check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $vert;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        position: absolute;
+        padding: 5%;
+        @include marge(-11%,0%,0%,76%);
+        i{
+          color: $blanc;
+          font-size: larger;
+          transition: transform 530ms;
+        }
+        opacity: 0;
+        transition: transform 530ms ease-in-out;
       }
     }
     button
