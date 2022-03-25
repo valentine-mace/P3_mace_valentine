@@ -281,8 +281,8 @@ footer
     {
       img
       {
-        @include taille_image(60%,40%);
-        @include marge(-7%,60%,0%,350%);
+        @include taille_image(60%,50%);
+        @include marge(-7%,60%,0%,0%);
 
       }
     }
@@ -379,6 +379,7 @@ footer
   }
 }
 
+//pour tablette
 @media screen and  (min-width : 766px) and (max-width : 991px)
 {
   header
@@ -397,7 +398,7 @@ footer
       img
       {
         @include taille_image(100%,80%);
-        @include marge(-5%,60%,0%,350%);
+        @include marge(-7%,0%,0%,50%);
 
       }
     }
