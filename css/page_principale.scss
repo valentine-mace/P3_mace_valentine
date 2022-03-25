@@ -225,20 +225,17 @@ header
         font-family: $roboto;
         color: $noir;
         font-size: 90%;
-        @include marge(0,0 ,0 ,-10%);
+        @include marge(0,0 ,0 ,-60%);
         @include padding(0%,0%,0%,10%);
         p{
           @include marge(-10%,0 ,0 ,0);
           @include padding(0%,0%,15%,0%);
         }
       }
-      .test{
-        margin-left: 0%;
-      }
       .coeur {
         position: absolute;
         margin-top: 7%;
-        margin-left: -7%;
+        margin-left: 70%;
         .fas {
           opacity: 0;
           transition: all 0.2s linear;
@@ -410,7 +407,7 @@ footer
       {
         .texte_restaurant
         {
-          @include marge(0,0 ,0 ,-10%);
+          @include marge(0,0 ,0 ,-60%);
           @include padding(1%,0%,1%,0%);
           font-size: 110%;
           p
@@ -422,7 +419,7 @@ footer
         .coeur {
           position: absolute;
           margin-top: 5%;
-          margin-left: 2%;
+          margin-left: 80%;
           .fas {
             opacity: 0;
             transition: all 0.2s linear;
@@ -577,7 +574,7 @@ footer
       {
         .texte_restaurant
         {
-          @include marge(0,0 ,0 ,-5%);
+          @include marge(0,0 ,0 ,-60%);
           @include padding(1%,0%,1%,0%);
           font-size: 110%;
           p
@@ -585,6 +582,9 @@ footer
             @include padding(0%,0%,15%,0%);
             
           }
+        }
+        .coeur{
+          margin-left: 80%;
         }
       }
     }

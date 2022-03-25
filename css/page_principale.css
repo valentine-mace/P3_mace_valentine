@@ -319,7 +319,7 @@ header .localisation i {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: -10%;
+  margin-left: -60%;
   padding-top: 0%;
   padding-right: 0%;
   padding-bottom: 0%;
@@ -337,14 +337,10 @@ header .localisation i {
   padding-left: 0%;
 }
 
-.restaurants .carte_restaurant .detail_restaurant .test {
-  margin-left: 0%;
-}
-
 .restaurants .carte_restaurant .detail_restaurant .coeur {
   position: absolute;
   margin-top: 7%;
-  margin-left: -7%;
+  margin-left: 70%;
 }
 
 .restaurants .carte_restaurant .detail_restaurant .coeur .fas {
@@ -562,7 +558,7 @@ footer li a {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: -10%;
+    margin-left: -60%;
     padding-top: 1%;
     padding-right: 0%;
     padding-bottom: 1%;
@@ -578,7 +574,7 @@ footer li a {
   .restaurants .carte_restaurant .detail_restaurant .coeur {
     position: absolute;
     margin-top: 5%;
-    margin-left: 2%;
+    margin-left: 80%;
   }
   .restaurants .carte_restaurant .detail_restaurant .coeur .fas {
     opacity: 0;
@@ -773,7 +769,7 @@ footer li a {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: -5%;
+    margin-left: -60%;
     padding-top: 1%;
     padding-right: 0%;
     padding-bottom: 1%;
@@ -785,6 +781,9 @@ footer li a {
     padding-right: 0%;
     padding-bottom: 15%;
     padding-left: 0%;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .coeur {
+    margin-left: 80%;
   }
   footer {
     padding-top: 2%;
