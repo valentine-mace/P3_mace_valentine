@@ -9,12 +9,11 @@ body
 header
 {
   background-color: $blanc;
-  @include marge(0,0,5%,0);
-  position: absolute;
+  @include marge(0,0,4%,0);
   .fleche
   {
     i{
-      @include marge(9%,0,0%,5%);
+      @include marge(7%,0,0%,5%);
       color: $noir;
     }
   }
@@ -23,8 +22,8 @@ header
     @include position_centre;
     img
     {
-      @include taille_image(50%,30%);
-      @include marge(-7%,0,0%,0);
+      @include taille_image(40%,30%);
+      @include marge(-5%,0,0%,0%);
     }
   }
 }

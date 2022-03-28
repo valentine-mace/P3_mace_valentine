@@ -48,7 +48,7 @@ header
     @include position_centre;
       img{
         @include taille_image(50%,30%);
-        @include marge(5%,0,5%,0);
+        @include marge(5%,10%,5%,0);
       }
   }
   .localisation
