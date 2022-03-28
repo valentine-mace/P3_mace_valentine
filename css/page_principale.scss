@@ -8,7 +8,6 @@ body
   position: relative;
   opacity: 0;
   animation: test 4s 1;
-  animation-fill-mode: forwards;
 }
 
 @keyframes test {
