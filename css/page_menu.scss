@@ -9,6 +9,7 @@ body
 header
 {
   background-color: $blanc;
+  position: absolute;
   @include marge(0,0,4%,0);
   .fleche
   {
