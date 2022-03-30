@@ -49,7 +49,7 @@ main .taille {
   padding-right: 6%;
   padding-bottom: 10%;
   padding-left: 6%;
-  margin-top: -20%;
+  margin-top: -20px;
   margin-right: 0%;
   margin-bottom: 0%;
   margin-left: 0%;
@@ -386,7 +386,7 @@ footer li a {
     padding-right: 6%;
     padding-bottom: 4%;
     padding-left: 6%;
-    margin-top: -20%;
+    margin-top: -10%;
   }
   .section_principale .titre .coeur {
     margin-top: 3%;
