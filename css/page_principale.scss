@@ -90,7 +90,7 @@ header
     {
       margin: auto;
       display: block;
-      @include padding(4%,4% ,4% ,4%);
+      @include padding(2.5%,4% ,2.5% ,4%);
       border-radius: 30px;
       font-family: $roboto;
       font-weight: 900;
@@ -346,7 +346,7 @@ footer
       margin-bottom: 2%;
     }
     button{
-      @include padding(2%,2% ,2% ,2%);
+      @include padding(1%,2% ,1% ,2%);
     }
   }
 
@@ -517,7 +517,7 @@ footer
       margin-bottom: 2%;
     }
     button{
-      @include padding(2%,2% ,2% ,2%);
+      @include padding(1%,2% ,1% ,2%);
     }
   }
   .fonctionnement

@@ -132,9 +132,9 @@ header .localisation i {
 .presentation_page button {
   margin: auto;
   display: block;
-  padding-top: 4%;
+  padding-top: 2.5%;
   padding-right: 4%;
-  padding-bottom: 4%;
+  padding-bottom: 2.5%;
   padding-left: 4%;
   border-radius: 30px;
   font-family: "Roboto", sans-serif;
@@ -483,9 +483,9 @@ footer li a {
     margin-bottom: 2%;
   }
   .presentation_page button {
-    padding-top: 2%;
+    padding-top: 1%;
     padding-right: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-left: 2%;
   }
   .fonctionnement h1 {
@@ -700,9 +700,9 @@ footer li a {
     margin-bottom: 2%;
   }
   .presentation_page button {
-    padding-top: 2%;
+    padding-top: 1%;
     padding-right: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-left: 2%;
   }
   .fonctionnement h1 {
