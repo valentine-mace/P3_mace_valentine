@@ -34,3 +34,9 @@ $shrikhand: 'Shrikhand', cursive;
   font-family: 'Roboto';
   font-weight: bold;
 }
+
+@mixin overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;   
+}

@@ -113,83 +113,69 @@ main
     @include marge(10%,89%,0%,0%);
     
   }
-  .menu
-  {
-    font-family: $roboto;
+  .menu{
     background-color: $blanc;
-    border-radius: 10px;
-    @include padding(0%,0%,0%,3%);
-    box-shadow: 1px 1px 8px $gris;
-    @include marge(4%,-1%,3%,-1%);
     display: flex;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    border-radius: 15px;    
+    padding-left: 2%;
+    margin-top: 3%;
+    margin-bottom: 4%;
     overflow: hidden;
-    .texte{
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      h4
-      {
-        margin-bottom: -3%;
-        padding-top: 3%;
-        padding-right: 20%;
-        font-weight: 800;
-        display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      
-      }
-      p{
-        font-size: 90%;
-        width:270px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-    }
     .prix
     {
-      margin-top: 16%;
+      font-family: $roboto;
+      font-weight: 800;
+      margin-right: 5%;
+      margin-top: 12%;
+      }
+    .description
+    {
+      font-family: $roboto;
+      padding-left: 2%;
+      @include overflow;
+      h3
+      {
+        margin-bottom: 0%;
+        @include overflow;
+        font-size: 1.1rem;
+      }
+      p
+      {
+        margin-top: 2%;
+        @include overflow;
+      }
     }
     .check{
       display: none;
       text-align: center;
       height: 100%;
       background-color: $vert;
-      padding-top: 10%;
-      padding-bottom: 11%;
-      padding-left: 5%;
-      padding-right: 5%;
-      animation: slidin 1000ms 1 forwards; 
       i{
-        color: $blanc;
-        font-size: large;
-        animation: rotate 1000ms 200ms;
+          font-size: 20px;
+          color: $blanc;
+          margin-top: 40%;
+          animation: rotate 700ms;
+    
       }
     }
     &:hover{
       cursor: pointer;
-      .check{
-        display: block;
-        @keyframes slidin {
-          0%{width: 0%;
-            margin-left: 150%;}
-          100%{width: 100%;
-            margin-left:-20%;}
-        }   
-        i{
-          @keyframes rotate {
-            from {transform: rotate(0deg);}
-            to  {transform: rotate(360deg);}
-          }
+      @keyframes slide {
+        0%{width: 0%;}
+        100%{width: 20%;}
+      }
+      @keyframes rotate {
+        from {transform: rotate(0deg);}
+        to  {transform: rotate(360deg);}
+      }
+        .check{
+            display: block;
+            animation: slide 700ms ease-in-out forwards;    
         }
-      }
-      .texte{
-        width:270px;
-      }
-      .prix{
-        margin-right: 2%;
-      }
     }
   }
   button
@@ -209,7 +195,6 @@ main
       cursor: pointer;
     }
   }
-  
 }
 
  @keyframes apparition_menu {
