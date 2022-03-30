@@ -255,6 +255,7 @@ header
           &:hover {
             opacity: 1;
             animation: 0.8s 0s 1 both transition;
+            cursor: pointer;
             @keyframes transition {
               from {
                 opacity: 0;

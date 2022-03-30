@@ -358,6 +358,7 @@ header .localisation i {
   opacity: 1;
   -webkit-animation: 0.8s 0s 1 both transition;
           animation: 0.8s 0s 1 both transition;
+  cursor: pointer;
 }
 
 @-webkit-keyframes transition {
