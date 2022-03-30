@@ -209,7 +209,7 @@ header
       font-size: 80%;
       color: $vert-fonce;
       background-color: $vert;
-      font-weight: 800;
+      font-weight: 900;
       @include padding(2%,4%,2%,4% );
       position:absolute;
       }
@@ -400,6 +400,7 @@ footer
         p
         {
           @include padding(1%,2%,1%,2% );
+          font-size: 1em;
         }
       }
       .detail_restaurant

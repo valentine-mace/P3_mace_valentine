@@ -283,9 +283,9 @@ header .localisation i {
 
 .restaurants .carte_restaurant .nouveau p {
   font-size: 80%;
-  color: #2ABEA4;
+  color: #008766;
   background-color: #99E2D0;
-  font-weight: 800;
+  font-weight: 900;
   padding-top: 2%;
   padding-right: 4%;
   padding-bottom: 2%;
@@ -527,6 +527,7 @@ footer li a {
     padding-right: 2%;
     padding-bottom: 1%;
     padding-left: 2%;
+    font-size: 1em;
   }
   .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
     margin-top: 0;
