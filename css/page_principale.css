@@ -260,15 +260,15 @@ header .localisation i {
 }
 
 .restaurants .carte_restaurant {
-  width: 340px;
-  height: 200px;
+  width: 90%;
+  height: 250px;
   margin: auto;
   margin-bottom: 20%;
 }
 
 .restaurants .carte_restaurant img {
-  width: 340px;
-  height: 200px;
+  width: 100%;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
@@ -502,13 +502,13 @@ footer li a {
     margin-left: 45%;
   }
   .restaurants .carte_restaurant {
-    height: 400px;
-    width: 600px;
-    margin-bottom: 5%;
+    height: 600px;
+    width: 50%;
+    margin-bottom: -5%;
   }
   .restaurants .carte_restaurant img {
     height: 400px;
-    width: 600px;
+    width: 100%;
   }
   .restaurants .carte_restaurant .nouveau {
     margin-top: 2%;
@@ -687,12 +687,12 @@ footer li a {
   }
   .restaurants .carte_restaurant {
     height: 400px;
-    width: 600px;
+    width: 80%;
     margin-bottom: 15%;
   }
   .restaurants .carte_restaurant img {
     height: 400px;
-    width: 600px;
+    width: 100%;
   }
   .restaurants .carte_restaurant .nouveau {
     margin-top: 2%;
