@@ -395,10 +395,7 @@ footer {
 footer h3 {
   font-family: "Shrikhand", cursive;
   color: #fff;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 10%;
+  margin-left: 40px;
 }
 
 footer li {
@@ -406,10 +403,7 @@ footer li {
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 80%;
-  margin-top: 0;
-  margin-right: 0;
   margin-bottom: 3%;
-  margin-left: 0;
 }
 
 footer li i {
@@ -600,19 +594,12 @@ footer li a {
   }
   footer h3 {
     font-size: 160%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 2%;
-    margin-left: 2%;
   }
   footer li {
     font-size: 100%;
   }
   footer li i {
-    margin-top: 0;
     margin-right: 1%;
-    margin-bottom: 0;
-    margin-left: 0;
   }
 }
 
@@ -747,19 +734,9 @@ footer li a {
   }
   footer h3 {
     font-size: 160%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 2%;
-    margin-left: 2%;
   }
   footer li {
     font-size: 100%;
-  }
-  footer li i {
-    margin-top: 0;
-    margin-right: 1%;
-    margin-bottom: 0;
-    margin-left: 0;
   }
 }
 /*# sourceMappingURL=page_principale.css.map */
