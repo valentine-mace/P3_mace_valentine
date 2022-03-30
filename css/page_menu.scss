@@ -36,9 +36,9 @@ main
     @include taille_image(100%,20%);
     @include marge(0%,0%,0%,0);
   }
-  .image_small
+  .taille
   {
-    @include marge(-10%,0%,0%,0);
+    height: 300px;
   }
 }
 
@@ -48,7 +48,7 @@ main
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   @include padding(4%,6%,10%,6%);
-  @include marge(-12%,0%,0%,0%);
+  @include marge(-20%,0%,0%,0%);
   position: relative;
   .titre
   {
@@ -98,9 +98,13 @@ main
   .type
   {
     font-family: $roboto;
-    border-bottom: 2px solid $vert;
     @include padding(0,0,0,0);
     @include marge(0%,89%,0%,0%);
+  }
+  .underline{
+    background-color: $vert;
+    height: 2px;
+    width: 40px;
   }
   .extra_marge
   {
@@ -283,14 +287,15 @@ footer
       height: 600px;
       
     }
-    .image_small
+    .taille
     {
-      @include marge(-50%,0%,0%,0);
+      height: 800px;
     }
   }
   .section_principale
   {
     @include padding(4%,6%,4%,6%);
+    margin-top: -20%;
     .titre
     {
       .coeur
@@ -391,14 +396,15 @@ footer
     {
       @include taille_image(100%,10%);
     }
-    .image_small
+    .taille
     {
-      @include marge(-50%,0%,0%,0);
+      height: 500px;
     }
   }
   .section_principale
   {
     @include padding(4%,6%,4%,6%);
+    margin-top: -10%;
     .titre
     {
       .coeur
