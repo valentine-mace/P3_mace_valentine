@@ -9,22 +9,22 @@ body
 header
 {
   background-color: $blanc;
-  position: absolute;
-  @include marge(0,0,4%,0);
+  display: flex;
+  margin-top: 5%;
   .fleche
   {
+    margin-left: 5%;
     i{
-      @include marge(7%,0,0%,5%);
       color: $noir;
+      font-size: 1.5em;
     }
   }
   .logo
   {
-    @include position_centre;
+    text-align: center;
     img
     {
-      @include taille_image(40%,30%);
-      @include marge(-5%,0,0%,0%);
+      @include taille_image(50%,70%);
     }
   }
 }
@@ -268,22 +268,12 @@ footer
 {
   header
   {
-    @include marge(0,0,10%,0);
-    @include padding(0,70%,1%,10%);
-    .fleche
-    {
-      i{
-        @include marge(9%,0,0%,-40%);
-        font-size: 170%;
-      }
-    }
+    margin-top: 1%;
     .logo
     {
       img
       {
-        @include taille_image(60%,50%);
-        @include marge(-7%,60%,0%,0%);
-
+        @include taille_image(60%,70%);
       }
     }
   }
@@ -291,8 +281,8 @@ footer
   {
     img
     {
-      @include taille_image(100%,10%);
-      @include marge(-20%,0%,0%,0);
+      height: 600px;
+      
     }
     .image_small
     {
@@ -384,22 +374,18 @@ footer
 {
   header
   {
-    @include marge(0,0,10%,0);
-    @include padding(0,70%,1%,10%);
     .fleche
     {
       i{
-        @include marge(9%,0,0%,-40%);
         font-size: 170%;
+        font-size: 2em;
       }
     }
     .logo
     {
       img
       {
-        @include taille_image(100%,80%);
-        @include marge(-7%,0%,0%,50%);
-
+        @include taille_image(80%,60%);
       }
     }
   }
@@ -408,7 +394,6 @@ footer
     img
     {
       @include taille_image(100%,10%);
-      @include marge(-20%,0%,0%,0);
     }
     .image_small
     {

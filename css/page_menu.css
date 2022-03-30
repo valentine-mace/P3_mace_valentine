@@ -4,37 +4,28 @@ body {
 
 header {
   background-color: #fff;
-  position: absolute;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 4%;
-  margin-left: 0;
-}
-
-header .fleche i {
-  margin-top: 7%;
-  margin-right: 0;
-  margin-bottom: 0%;
-  margin-left: 5%;
-  color: black;
-}
-
-header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 5%;
+}
+
+header .fleche {
+  margin-left: 5%;
+}
+
+header .fleche i {
+  color: black;
+  font-size: 1.5em;
+}
+
+header .logo {
+  text-align: center;
 }
 
 header .logo img {
-  width: 40%;
-  height: 30%;
-  margin-top: -5%;
-  margin-right: 0;
-  margin-bottom: 0%;
-  margin-left: 0%;
+  width: 50%;
+  height: 70%;
 }
 
 main img {
@@ -382,37 +373,14 @@ footer li a {
 /*pour ordinateur*/
 @media screen and (min-width: 992px) {
   header {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 10%;
-    margin-left: 0;
-    padding-top: 0;
-    padding-right: 70%;
-    padding-bottom: 1%;
-    padding-left: 10%;
-  }
-  header .fleche i {
-    margin-top: 9%;
-    margin-right: 0;
-    margin-bottom: 0%;
-    margin-left: -40%;
-    font-size: 170%;
+    margin-top: 1%;
   }
   header .logo img {
     width: 60%;
-    height: 50%;
-    margin-top: -7%;
-    margin-right: 60%;
-    margin-bottom: 0%;
-    margin-left: 0%;
+    height: 70%;
   }
   main img {
-    width: 100%;
-    height: 10%;
-    margin-top: -20%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-    margin-left: 0;
+    height: 600px;
   }
   main .image_small {
     margin-top: -50%;
@@ -512,38 +480,17 @@ footer li a {
 }
 
 @media screen and (min-width: 766px) and (max-width: 991px) {
-  header {
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 10%;
-    margin-left: 0;
-    padding-top: 0;
-    padding-right: 70%;
-    padding-bottom: 1%;
-    padding-left: 10%;
-  }
   header .fleche i {
-    margin-top: 9%;
-    margin-right: 0;
-    margin-bottom: 0%;
-    margin-left: -40%;
     font-size: 170%;
+    font-size: 2em;
   }
   header .logo img {
-    width: 100%;
-    height: 80%;
-    margin-top: -7%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-    margin-left: 50%;
+    width: 80%;
+    height: 60%;
   }
   main img {
     width: 100%;
     height: 10%;
-    margin-top: -20%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-    margin-left: 0;
   }
   main .image_small {
     margin-top: -50%;
