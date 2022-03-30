@@ -379,7 +379,7 @@ header .localisation i {
 .restaurants .carte_restaurant .detail_restaurant .coeur .fas,
 .restaurants .carte_restaurant .detail_restaurant .coeur .far {
   position: absolute;
-  font-size: larger;
+  font-size: 140%;
   color: black;
   margin-top: -20%;
 }
@@ -582,7 +582,7 @@ footer li a {
   .restaurants .carte_restaurant .detail_restaurant .coeur .fas,
   .restaurants .carte_restaurant .detail_restaurant .coeur .far {
     position: absolute;
-    font-size: larger;
+    font-size: 180%;
     color: black;
     margin-top: -20%;
   }
@@ -725,6 +725,9 @@ footer li a {
   }
   .restaurants .carte_restaurant .detail_restaurant .coeur {
     margin-left: 80%;
+  }
+  .restaurants .carte_restaurant .detail_restaurant .coeur .fas, .restaurants .carte_restaurant .detail_restaurant .coeur .far {
+    font-size: 160%;
   }
   footer {
     padding-top: 2%;
