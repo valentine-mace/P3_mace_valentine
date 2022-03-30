@@ -76,6 +76,7 @@ main
         &:hover {
           opacity: 1;
           animation: 0.8s 0s 1 both transition;
+          cursor: pointer;
           @keyframes transition {
             from {
               opacity: 0;
@@ -167,6 +168,7 @@ main
       transition: transform 530ms ease-in-out;
     }
     &:hover{
+      cursor: pointer;
       .check{
         opacity: 1;
         transform: translate(-6%);
@@ -207,6 +209,7 @@ main
     {
       filter: brightness(120%);
       box-shadow: 2px 2px 12px $gris-noir;
+      cursor: pointer;
     }
   }
   

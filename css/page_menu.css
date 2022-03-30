@@ -94,6 +94,7 @@ main .taille {
   opacity: 1;
   -webkit-animation: 0.8s 0s 1 both transition;
           animation: 0.8s 0s 1 both transition;
+  cursor: pointer;
 }
 
 @-webkit-keyframes transition {
@@ -236,6 +237,10 @@ main .taille {
   transition: transform 530ms, -webkit-transform 530ms;
 }
 
+.section_principale .menu:hover {
+  cursor: pointer;
+}
+
 .section_principale .menu:hover .check {
   opacity: 1;
   -webkit-transform: translate(-6%);
@@ -289,6 +294,7 @@ main .taille {
           filter: brightness(120%);
   -webkit-box-shadow: 2px 2px 12px #484949;
           box-shadow: 2px 2px 12px #484949;
+  cursor: pointer;
 }
 
 @-webkit-keyframes apparition_menu {
