@@ -46,23 +46,27 @@ header
   {
     box-shadow: 0px 2px 4px $gris-fonce;
     position: relative;
-    @include position_centre;
+    text-align: center;
       img{
         @include taille_image(50%,30%);
-        @include marge(5%,10%,5%,0);
+        margin-top: 5%;
+        margin-bottom: 2%;
       }
   }
   .localisation
   {
     background-color: $gris;
-    @include position_centre;
+    display: flex;
+    justify-content: center;
+    align-items: center;
       p{
         font-family: $roboto;
         font-weight: 800;
         font-size: 110%;
       }
       i{
-        @include marge(5%,5%,0,-10%);
+        font-size: 1.2em;
+        padding-right: 4%;
       }
 
   }
@@ -316,23 +320,15 @@ footer
   }
   header
   {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 2px 4px $gris-fonce;
-    position: relative;
     .logo{
-      box-shadow: 0px 0px 0px $gris-fonce;
       img{
-      @include marge(10%,0,7%,15%);
-      @include taille_image(50%,40%);
+      @include taille_image(20%,10%);
+      margin-top: 2%;
       }
     }
     .localisation{
-      @include marge(2%,5%,0,10%);
-      background-color: $blanc;
       i{
-        
-        @include marge(16%,10%,0,-10%);
+        padding-right: 2%;
       }
     }
   }
@@ -489,22 +485,15 @@ footer
   }
   header
   {
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0px 2px 4px $gris-fonce;
-    position: relative;
     .logo{
-      box-shadow: 0px 0px 0px $gris-fonce;
       img{
-      @include marge(10%,0,7%,0%);
-      @include taille_image(40%,40%);
+      @include taille_image(40%,10%);
+      margin-top: 2%;
       }
     }
     .localisation{
-      @include marge(4%,10%,0,0%);
-      background-color: $blanc;
       i{
-        @include marge(16%,10%,0,-10%);
+        padding-right: 2%;
       }
     }
   }

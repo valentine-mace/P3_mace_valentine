@@ -61,21 +61,14 @@ header .logo {
   -webkit-box-shadow: 0px 2px 4px #989696;
           box-shadow: 0px 2px 4px #989696;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 header .logo img {
   width: 50%;
   height: 30%;
   margin-top: 5%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  margin-left: 0;
+  margin-bottom: 2%;
 }
 
 header .localisation {
@@ -86,6 +79,9 @@ header .localisation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .localisation p {
@@ -95,10 +91,8 @@ header .localisation p {
 }
 
 header .localisation i {
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-bottom: 0;
-  margin-left: -10%;
+  font-size: 1.2em;
+  padding-right: 4%;
 }
 
 .presentation_page {
@@ -436,41 +430,13 @@ footer li a {
     margin-left: 43%;
     margin-top: 20%;
   }
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-shadow: 0px 2px 4px #989696;
-            box-shadow: 0px 2px 4px #989696;
-    position: relative;
-  }
-  header .logo {
-    -webkit-box-shadow: 0px 0px 0px #989696;
-            box-shadow: 0px 0px 0px #989696;
-  }
   header .logo img {
-    margin-top: 10%;
-    margin-right: 0;
-    margin-bottom: 7%;
-    margin-left: 15%;
-    width: 50%;
-    height: 40%;
-  }
-  header .localisation {
+    width: 20%;
+    height: 10%;
     margin-top: 2%;
-    margin-right: 5%;
-    margin-bottom: 0;
-    margin-left: 10%;
-    background-color: #fff;
   }
   header .localisation i {
-    margin-top: 16%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    margin-left: -10%;
+    padding-right: 2%;
   }
   .presentation_page {
     padding-top: 3%;
@@ -653,41 +619,13 @@ footer li a {
   body .spinner {
     margin-left: 35%;
   }
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-shadow: 0px 2px 4px #989696;
-            box-shadow: 0px 2px 4px #989696;
-    position: relative;
-  }
-  header .logo {
-    -webkit-box-shadow: 0px 0px 0px #989696;
-            box-shadow: 0px 0px 0px #989696;
-  }
   header .logo img {
-    margin-top: 10%;
-    margin-right: 0;
-    margin-bottom: 7%;
-    margin-left: 0%;
     width: 40%;
-    height: 40%;
-  }
-  header .localisation {
-    margin-top: 4%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    margin-left: 0%;
-    background-color: #fff;
+    height: 10%;
+    margin-top: 2%;
   }
   header .localisation i {
-    margin-top: 16%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    margin-left: -10%;
+    padding-right: 2%;
   }
   .presentation_page {
     padding-top: 3%;
