@@ -154,17 +154,21 @@ main .taille {
   border-radius: 10px;
   padding-top: 0%;
   padding-right: 4%;
-  padding-bottom: 1%;
+  padding-bottom: 0%;
   padding-left: 3%;
   -webkit-box-shadow: 1px 1px 8px #DEDADA;
           box-shadow: 1px 1px 8px #DEDADA;
-  margin-top: 0;
+  margin-top: 4%;
   margin-right: -1%;
-  margin-bottom: 0;
+  margin-bottom: 3%;
   margin-left: -1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 
-.section_principale .menu h4 {
+.section_principale .menu .texte h4 {
   margin-bottom: -3%;
   padding-top: 3%;
   padding-right: 20%;
@@ -174,19 +178,7 @@ main .taille {
   text-overflow: ellipsis;
 }
 
-.section_principale .menu .prix_accompagnement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section_principale .menu .prix_accompagnement .menu_accompagnement {
+.section_principale .menu .texte p {
   font-size: 90%;
   width: 270px;
   overflow: hidden;
@@ -194,11 +186,8 @@ main .taille {
   white-space: nowrap;
 }
 
-.section_principale .menu .prix_accompagnement .menu_prix {
-  -webkit-transition: -webkit-transform 530ms;
-  transition: -webkit-transform 530ms;
-  transition: transform 530ms;
-  transition: transform 530ms, -webkit-transform 530ms;
+.section_principale .menu .prix {
+  margin-top: 18%;
 }
 
 .section_principale .menu .check {
@@ -214,14 +203,6 @@ main .taille {
   background-color: #99E2D0;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  position: absolute;
-  padding: 7%;
-  padding-top: 8%;
-  margin-top: -19%;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  margin-left: 70%;
-  opacity: 0;
   -webkit-transition: -webkit-transform 530ms ease-in-out;
   transition: -webkit-transform 530ms ease-in-out;
   transition: transform 530ms ease-in-out;
@@ -243,8 +224,28 @@ main .taille {
 
 .section_principale .menu:hover .check {
   opacity: 1;
-  -webkit-transform: translate(-6%);
-          transform: translate(-6%);
+  -webkit-animation: 1s 0s 1 both check;
+          animation: 1s 0s 1 both check;
+}
+
+@-webkit-keyframes check {
+  from {
+    width: 0%;
+  }
+  to {
+    padding: 8%;
+    padding-bottom: 10%;
+  }
+}
+
+@keyframes check {
+  from {
+    width: 0%;
+  }
+  to {
+    padding: 8%;
+    padding-bottom: 10%;
+  }
 }
 
 .section_principale .menu:hover .check i {
@@ -252,19 +253,12 @@ main .taille {
           transform: rotate(360deg);
 }
 
-.section_principale .menu:hover .prix_accompagnement .menu_prix {
-  -webkit-transform: translate(-300%);
-          transform: translate(-300%);
+.section_principale .menu:hover .prix {
+  -webkit-transform: translate(-70%);
+          transform: translate(-70%);
 }
 
-.section_principale .menu:hover .prix_accompagnement .menu_accompagnement {
-  width: 180px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.section_principale .menu:hover h4 {
+.section_principale .menu:hover .texte {
   width: 180px;
   overflow: hidden;
   text-overflow: ellipsis;
