@@ -48,7 +48,7 @@ main
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   @include padding(4%,6%,10%,6%);
-  @include marge(-20%,0%,0%,0%);
+  @include marge(-40px,0%,0%,0%);
   position: relative;
   .titre
   {
