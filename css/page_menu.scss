@@ -234,13 +234,12 @@ main
 footer
 {
   background-color:$gris-noir;
-  @include padding(5%, 0 ,5% ,0 );
+  @include padding(5%,0,5%,0);
   h3
   {
     font-family: $shrikhand;
     color: $blanc;
-    @include marge(0,0,0 ,10% );
-
+    margin-left: 40px;
   }
   li
   {
@@ -248,10 +247,10 @@ footer
     font-family: $roboto;
     color: $blanc;
     font-size: 80%;
-    @include marge(0,0,3%,0);
+    margin-bottom: 3%;
     i
     {
-      @include marge(0,4% ,0,0 );
+      @include marge(0,4%,0,0);
     }
     a
     {
@@ -350,22 +349,19 @@ footer
   }
   footer
   {
-    @include padding(2%, 0 ,1% ,0 );
+    @include padding(2%, 0 ,2% ,0 );
     h3
     {
-      @include marge(0,0,2% ,3% );
-      font-size: 150%;
-
+      font-size: 160%;
     }
     li
     {
       font-size: 100%;
       i
       {
-        @include marge(0,1% ,0,0 );
+       margin-right: 1%;
       }
     }
-
   }
 }
 
@@ -450,22 +446,15 @@ footer
   }
   footer
   {
-    @include padding(2%, 0 ,1% ,0 );
+    @include padding(2%, 0 ,2% ,0 );
     h3
     {
-      @include marge(0,0,2% ,3% );
-      font-size: 150%;
-
+      font-size: 160%;
     }
     li
     {
       font-size: 100%;
-      i
-      {
-        @include marge(0,1% ,0,0 );
-      }
     }
-
   }
 }
 
