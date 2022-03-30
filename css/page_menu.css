@@ -153,7 +153,7 @@ main .taille {
   background-color: #fff;
   border-radius: 10px;
   padding-top: 0%;
-  padding-right: 4%;
+  padding-right: 0%;
   padding-bottom: 0%;
   padding-left: 3%;
   -webkit-box-shadow: 1px 1px 8px #DEDADA;
@@ -168,6 +168,12 @@ main .taille {
   overflow: hidden;
 }
 
+.section_principale .menu .texte {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .section_principale .menu .texte h4 {
   margin-bottom: -3%;
   padding-top: 3%;
@@ -176,6 +182,7 @@ main .taille {
   display: block;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .section_principale .menu .texte p {
@@ -187,35 +194,27 @@ main .taille {
 }
 
 .section_principale .menu .prix {
-  margin-top: 18%;
+  margin-top: 16%;
 }
 
 .section_principale .menu .check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+  text-align: center;
+  height: 100%;
   background-color: #99E2D0;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  -webkit-transition: -webkit-transform 530ms ease-in-out;
-  transition: -webkit-transform 530ms ease-in-out;
-  transition: transform 530ms ease-in-out;
-  transition: transform 530ms ease-in-out, -webkit-transform 530ms ease-in-out;
+  padding-top: 10%;
+  padding-bottom: 11%;
+  padding-left: 5%;
+  padding-right: 5%;
+  -webkit-animation: slidin 1000ms 1 forwards;
+          animation: slidin 1000ms 1 forwards;
 }
 
 .section_principale .menu .check i {
   color: #fff;
   font-size: large;
-  -webkit-transition: -webkit-transform 530ms;
-  transition: -webkit-transform 530ms;
-  transition: transform 530ms;
-  transition: transform 530ms, -webkit-transform 530ms;
+  -webkit-animation: rotate 1000ms 200ms;
+          animation: rotate 1000ms 200ms;
 }
 
 .section_principale .menu:hover {
@@ -223,46 +222,59 @@ main .taille {
 }
 
 .section_principale .menu:hover .check {
-  opacity: 1;
-  -webkit-animation: 1s 0s 1 both check;
-          animation: 1s 0s 1 both check;
+  display: block;
 }
 
-@-webkit-keyframes check {
-  from {
+@-webkit-keyframes slidin {
+  0% {
     width: 0%;
+    margin-left: 150%;
+  }
+  100% {
+    width: 100%;
+    margin-left: -20%;
+  }
+}
+
+@keyframes slidin {
+  0% {
+    width: 0%;
+    margin-left: 150%;
+  }
+  100% {
+    width: 100%;
+    margin-left: -20%;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    padding: 8%;
-    padding-bottom: 10%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes check {
+@keyframes rotate {
   from {
-    width: 0%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   to {
-    padding: 8%;
-    padding-bottom: 10%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-}
-
-.section_principale .menu:hover .check i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-
-.section_principale .menu:hover .prix {
-  -webkit-transform: translate(-70%);
-          transform: translate(-70%);
 }
 
 .section_principale .menu:hover .texte {
-  width: 180px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 270px;
+}
+
+.section_principale .menu:hover .prix {
+  margin-right: 2%;
 }
 
 .section_principale button {
