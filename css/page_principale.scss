@@ -107,6 +107,7 @@ header
       {
         filter: brightness(120%);
         box-shadow: 2px 2px 12px $gris-noir;
+        cursor: pointer;
       }
     }
 }
@@ -162,6 +163,7 @@ header
       &:hover
       {
         background-color: #f5edff;
+        cursor: pointer;
         i{
           color: $violet;
         }

@@ -147,6 +147,7 @@ header .localisation i {
           filter: brightness(120%);
   -webkit-box-shadow: 2px 2px 12px #484949;
           box-shadow: 2px 2px 12px #484949;
+  cursor: pointer;
 }
 
 .fonctionnement {
@@ -227,6 +228,7 @@ header .localisation i {
 
 .fonctionnement .choix .bulle:hover {
   background-color: #f5edff;
+  cursor: pointer;
 }
 
 .fonctionnement .choix .bulle:hover i {
