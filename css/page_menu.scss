@@ -152,14 +152,14 @@ main
     .check{
       display: none;
       text-align: center;
+      align-items: center;
+      padding-top: 20%;
       height: 100%;
       background-color: $vert;
       i{
           font-size: 20px;
           color: $blanc;
-          margin-top: 40%;
           animation: rotate 700ms;
-    
       }
     }
     &:hover{
@@ -174,7 +174,7 @@ main
       }
         .check{
             display: block;
-            animation: slide 700ms ease-in-out forwards;    
+            animation: slide 700ms ease-in-out forwards;   
         }
     }
   }

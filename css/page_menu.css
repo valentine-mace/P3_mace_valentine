@@ -201,6 +201,10 @@ main .taille {
 .section_principale .menu .check {
   display: none;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20%;
   height: 100%;
   background-color: #99E2D0;
 }
@@ -208,7 +212,6 @@ main .taille {
 .section_principale .menu .check i {
   font-size: 20px;
   color: #fff;
-  margin-top: 40%;
   -webkit-animation: rotate 700ms;
           animation: rotate 700ms;
 }
