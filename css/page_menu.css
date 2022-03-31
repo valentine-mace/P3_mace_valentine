@@ -173,6 +173,7 @@ main .taille {
   font-weight: 800;
   margin-right: 5%;
   margin-top: 12%;
+  padding-left: 3%;
 }
 
 .section_principale .menu .description {
@@ -181,7 +182,8 @@ main .taille {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 200px;
+  width: 220px;
+  margin-top: -4%;
 }
 
 .section_principale .menu .description h4 {
@@ -264,8 +266,8 @@ main .taille {
 
 .section_principale .menu:hover .check {
   display: block;
-  -webkit-animation: slide 700ms ease-in-out forwards;
-          animation: slide 700ms ease-in-out forwards;
+  -webkit-animation: slide 600ms ease-in-out forwards;
+          animation: slide 600ms ease-in-out forwards;
 }
 
 .section_principale button {

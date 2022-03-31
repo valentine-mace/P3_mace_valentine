@@ -131,13 +131,15 @@ main
       font-weight: 800;
       margin-right: 5%;
       margin-top: 12%;
+      padding-left: 3%;
       }
     .description
     {
       font-family: $roboto;
       padding-left: 2%;
       @include overflow;
-      width: 200px;
+      width: 220px;
+      margin-top: -4%;
       h4
       {
         margin-bottom: 0%;
@@ -176,7 +178,7 @@ main
       }
       .check{
         display: block;
-        animation: slide 700ms ease-in-out forwards;   
+        animation: slide 600ms ease-in-out forwards;   
       }
     }
   }
