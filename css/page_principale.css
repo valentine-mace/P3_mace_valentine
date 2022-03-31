@@ -61,21 +61,14 @@ header .logo {
   -webkit-box-shadow: 0px 2px 4px #989696;
           box-shadow: 0px 2px 4px #989696;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 header .logo img {
   width: 50%;
   height: 30%;
   margin-top: 5%;
-  margin-right: 10%;
-  margin-bottom: 5%;
-  margin-left: 0;
+  margin-bottom: 2%;
 }
 
 header .localisation {
@@ -86,6 +79,9 @@ header .localisation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .localisation p {
@@ -95,10 +91,8 @@ header .localisation p {
 }
 
 header .localisation i {
-  margin-top: 5%;
-  margin-right: 5%;
-  margin-bottom: 0;
-  margin-left: -10%;
+  font-size: 1.2em;
+  padding-right: 4%;
 }
 
 .presentation_page {
@@ -112,7 +106,7 @@ header .localisation i {
 
 .presentation_page h1 {
   font-weight: 800;
-  font-size: 130%;
+  font-size: 1.5em;
   margin-top: 5%;
   margin-right: 20%;
   margin-bottom: 5%;
@@ -121,7 +115,7 @@ header .localisation i {
 }
 
 .presentation_page p {
-  font-size: 110%;
+  font-size: 1.2em;
   margin-top: 0%;
   margin-right: 5%;
   margin-bottom: 6%;
@@ -132,9 +126,9 @@ header .localisation i {
 .presentation_page button {
   margin: auto;
   display: block;
-  padding-top: 4%;
+  padding-top: 2.5%;
   padding-right: 4%;
-  padding-bottom: 4%;
+  padding-bottom: 2.5%;
   padding-left: 4%;
   border-radius: 30px;
   font-family: "Roboto", sans-serif;
@@ -153,6 +147,7 @@ header .localisation i {
           filter: brightness(120%);
   -webkit-box-shadow: 2px 2px 12px #484949;
           box-shadow: 2px 2px 12px #484949;
+  cursor: pointer;
 }
 
 .fonctionnement {
@@ -224,7 +219,7 @@ header .localisation i {
 }
 
 .fonctionnement .choix .bulle i {
-  margin-top: 6%;
+  margin-top: 14px;
   margin-right: 10%;
   margin-bottom: 0%;
   margin-left: -10%;
@@ -233,6 +228,7 @@ header .localisation i {
 
 .fonctionnement .choix .bulle:hover {
   background-color: #f5edff;
+  cursor: pointer;
 }
 
 .fonctionnement .choix .bulle:hover i {
@@ -266,15 +262,15 @@ header .localisation i {
 }
 
 .restaurants .carte_restaurant {
-  width: 340px;
-  height: 200px;
+  width: 90%;
+  height: 250px;
   margin: auto;
   margin-bottom: 20%;
 }
 
 .restaurants .carte_restaurant img {
-  width: 340px;
-  height: 200px;
+  width: 100%;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
@@ -289,9 +285,9 @@ header .localisation i {
 
 .restaurants .carte_restaurant .nouveau p {
   font-size: 80%;
-  color: #2ABEA4;
+  color: #008766;
   background-color: #99E2D0;
-  font-weight: 800;
+  font-weight: 900;
   padding-top: 2%;
   padding-right: 4%;
   padding-bottom: 2%;
@@ -362,6 +358,7 @@ header .localisation i {
   opacity: 1;
   -webkit-animation: 0.8s 0s 1 both transition;
           animation: 0.8s 0s 1 both transition;
+  cursor: pointer;
 }
 
 @-webkit-keyframes transition {
@@ -385,7 +382,7 @@ header .localisation i {
 .restaurants .carte_restaurant .detail_restaurant .coeur .fas,
 .restaurants .carte_restaurant .detail_restaurant .coeur .far {
   position: absolute;
-  font-size: larger;
+  font-size: 140%;
   color: black;
   margin-top: -20%;
 }
@@ -401,10 +398,7 @@ footer {
 footer h3 {
   font-family: "Shrikhand", cursive;
   color: #fff;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 10%;
+  margin-left: 40px;
 }
 
 footer li {
@@ -412,10 +406,7 @@ footer li {
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 80%;
-  margin-top: 0;
-  margin-right: 0;
   margin-bottom: 3%;
-  margin-left: 0;
 }
 
 footer li i {
@@ -436,41 +427,13 @@ footer li a {
     margin-left: 43%;
     margin-top: 20%;
   }
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-shadow: 0px 2px 4px #989696;
-            box-shadow: 0px 2px 4px #989696;
-    position: relative;
-  }
-  header .logo {
-    -webkit-box-shadow: 0px 0px 0px #989696;
-            box-shadow: 0px 0px 0px #989696;
-  }
   header .logo img {
-    margin-top: 10%;
-    margin-right: 0;
-    margin-bottom: 7%;
-    margin-left: 15%;
-    width: 50%;
-    height: 40%;
-  }
-  header .localisation {
+    width: 20%;
+    height: 10%;
     margin-top: 2%;
-    margin-right: 5%;
-    margin-bottom: 0;
-    margin-left: 10%;
-    background-color: #fff;
   }
   header .localisation i {
-    margin-top: 16%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    margin-left: -10%;
+    padding-right: 2%;
   }
   .presentation_page {
     padding-top: 3%;
@@ -483,9 +446,9 @@ footer li a {
     margin-bottom: 2%;
   }
   .presentation_page button {
-    padding-top: 2%;
+    padding-top: 1%;
     padding-right: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-left: 2%;
   }
   .fonctionnement h1 {
@@ -524,7 +487,7 @@ footer li a {
     padding-left: 6%;
   }
   .fonctionnement .choix .bulle i {
-    margin-top: 9%;
+    margin-top: 14px;
     margin-right: 10%;
     margin-bottom: 0%;
     margin-left: -10%;
@@ -542,13 +505,13 @@ footer li a {
     margin-left: 45%;
   }
   .restaurants .carte_restaurant {
-    height: 400px;
-    width: 600px;
-    margin-bottom: 5%;
+    height: 600px;
+    width: 50%;
+    margin-bottom: -5%;
   }
   .restaurants .carte_restaurant img {
     height: 400px;
-    width: 600px;
+    width: 100%;
   }
   .restaurants .carte_restaurant .nouveau {
     margin-top: 2%;
@@ -561,6 +524,7 @@ footer li a {
     padding-right: 2%;
     padding-bottom: 1%;
     padding-left: 2%;
+    font-size: 1em;
   }
   .restaurants .carte_restaurant .detail_restaurant .texte_restaurant {
     margin-top: 0;
@@ -621,7 +585,7 @@ footer li a {
   .restaurants .carte_restaurant .detail_restaurant .coeur .fas,
   .restaurants .carte_restaurant .detail_restaurant .coeur .far {
     position: absolute;
-    font-size: larger;
+    font-size: 180%;
     color: black;
     margin-top: -20%;
   }
@@ -633,19 +597,12 @@ footer li a {
   }
   footer h3 {
     font-size: 160%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 2%;
-    margin-left: 2%;
   }
   footer li {
     font-size: 100%;
   }
   footer li i {
-    margin-top: 0;
     margin-right: 1%;
-    margin-bottom: 0;
-    margin-left: 0;
   }
 }
 
@@ -653,41 +610,13 @@ footer li a {
   body .spinner {
     margin-left: 35%;
   }
-  header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-shadow: 0px 2px 4px #989696;
-            box-shadow: 0px 2px 4px #989696;
-    position: relative;
-  }
-  header .logo {
-    -webkit-box-shadow: 0px 0px 0px #989696;
-            box-shadow: 0px 0px 0px #989696;
-  }
   header .logo img {
-    margin-top: 10%;
-    margin-right: 0;
-    margin-bottom: 7%;
-    margin-left: 0%;
     width: 40%;
-    height: 40%;
-  }
-  header .localisation {
-    margin-top: 4%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    margin-left: 0%;
-    background-color: #fff;
+    height: 10%;
+    margin-top: 2%;
   }
   header .localisation i {
-    margin-top: 16%;
-    margin-right: 10%;
-    margin-bottom: 0;
-    margin-left: -10%;
+    padding-right: 2%;
   }
   .presentation_page {
     padding-top: 3%;
@@ -700,9 +629,9 @@ footer li a {
     margin-bottom: 2%;
   }
   .presentation_page button {
-    padding-top: 2%;
+    padding-top: 1%;
     padding-right: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     padding-left: 2%;
   }
   .fonctionnement h1 {
@@ -742,7 +671,7 @@ footer li a {
     padding-left: 10%;
   }
   .fonctionnement .choix .bulle i {
-    margin-top: 9%;
+    margin-top: 14px;
     margin-right: 10%;
     margin-bottom: 0%;
     margin-left: -10%;
@@ -761,12 +690,12 @@ footer li a {
   }
   .restaurants .carte_restaurant {
     height: 400px;
-    width: 600px;
+    width: 80%;
     margin-bottom: 15%;
   }
   .restaurants .carte_restaurant img {
     height: 400px;
-    width: 600px;
+    width: 100%;
   }
   .restaurants .carte_restaurant .nouveau {
     margin-top: 2%;
@@ -800,6 +729,9 @@ footer li a {
   .restaurants .carte_restaurant .detail_restaurant .coeur {
     margin-left: 80%;
   }
+  .restaurants .carte_restaurant .detail_restaurant .coeur .fas, .restaurants .carte_restaurant .detail_restaurant .coeur .far {
+    font-size: 160%;
+  }
   footer {
     padding-top: 2%;
     padding-right: 0;
@@ -808,19 +740,9 @@ footer li a {
   }
   footer h3 {
     font-size: 160%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 2%;
-    margin-left: 2%;
   }
   footer li {
     font-size: 100%;
-  }
-  footer li i {
-    margin-top: 0;
-    margin-right: 1%;
-    margin-bottom: 0;
-    margin-left: 0;
   }
 }
 /*# sourceMappingURL=page_principale.css.map */
