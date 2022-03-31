@@ -47,7 +47,7 @@ main
   background-color: $gris-clair;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  @include padding(4%,6%,10%,6%);
+  @include padding(4%,4%,10%,4%);
   @include marge(-20px,0%,0%,0%);
   position: relative;
   .titre
@@ -137,15 +137,17 @@ main
       font-family: $roboto;
       padding-left: 2%;
       @include overflow;
-      h3
+      width: 200px;
+      h4
       {
         margin-bottom: 0%;
         @include overflow;
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       p
       {
-        margin-top: 2%;
+        margin-top: 1%;
+        font-size: 0.8em;
         @include overflow;
       }
     }
@@ -166,16 +168,16 @@ main
       cursor: pointer;
       @keyframes slide {
         0%{width: 0%;}
-        100%{width: 20%;}
+        100%{width: 25%;}
       }
       @keyframes rotate {
         from {transform: rotate(0deg);}
         to  {transform: rotate(360deg);}
       }
-        .check{
-            display: block;
-            animation: slide 700ms ease-in-out forwards;   
-        }
+      .check{
+        display: block;
+        animation: slide 700ms ease-in-out forwards;   
+      }
     }
   }
   button

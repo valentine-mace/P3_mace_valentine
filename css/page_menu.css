@@ -46,9 +46,9 @@ main .taille {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding-top: 4%;
-  padding-right: 6%;
+  padding-right: 4%;
   padding-bottom: 10%;
-  padding-left: 6%;
+  padding-left: 4%;
   margin-top: -20px;
   margin-right: 0%;
   margin-bottom: 0%;
@@ -181,18 +181,20 @@ main .taille {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 200px;
 }
 
-.section_principale .menu .description h3 {
+.section_principale .menu .description h4 {
   margin-bottom: 0%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .section_principale .menu .description p {
-  margin-top: 2%;
+  margin-top: 1%;
+  font-size: 0.8em;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -225,7 +227,7 @@ main .taille {
     width: 0%;
   }
   100% {
-    width: 20%;
+    width: 25%;
   }
 }
 
@@ -234,7 +236,7 @@ main .taille {
     width: 0%;
   }
   100% {
-    width: 20%;
+    width: 25%;
   }
 }
 
