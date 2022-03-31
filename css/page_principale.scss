@@ -157,7 +157,7 @@ header
       }   
       i
       {
-        @include marge(6%,10%,0%,-10%);
+        @include marge(14px,10%,0%,-10%);
         color: $gris-fonce;
       } 
       &:hover
@@ -372,7 +372,7 @@ footer
         @include padding(1%,10% ,1% ,6%);
         i
         {
-          @include marge(9%,10%,0%,-10%);
+          @include marge(14px,10%,0%,-10%);
         }
       }
     }

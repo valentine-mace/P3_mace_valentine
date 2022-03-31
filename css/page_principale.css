@@ -219,7 +219,7 @@ header .localisation i {
 }
 
 .fonctionnement .choix .bulle i {
-  margin-top: 6%;
+  margin-top: 14px;
   margin-right: 10%;
   margin-bottom: 0%;
   margin-left: -10%;
@@ -487,7 +487,7 @@ footer li a {
     padding-left: 6%;
   }
   .fonctionnement .choix .bulle i {
-    margin-top: 9%;
+    margin-top: 14px;
     margin-right: 10%;
     margin-bottom: 0%;
     margin-left: -10%;
