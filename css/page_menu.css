@@ -172,8 +172,7 @@ main .taille {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   margin-right: 5%;
-  margin-top: 12%;
-  padding-left: 3%;
+  padding-left: 10%;
 }
 
 .section_principale .menu .description {
@@ -183,7 +182,6 @@ main .taille {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 220px;
-  margin-top: -4%;
 }
 
 .section_principale .menu .description h4 {
@@ -208,7 +206,7 @@ main .taille {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 20%;
+  padding-top: 40px;
   height: 100%;
   background-color: #99E2D0;
 }
@@ -405,44 +403,8 @@ footer li a {
   .section_principale .menu h4 {
     margin-bottom: -1%;
   }
-  .section_principale .menu .check {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #99E2D0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    position: absolute;
-    padding: 3%;
-    margin-top: -6.4%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-    margin-left: 80.5%;
-    opacity: 0;
-    -webkit-transition: -webkit-transform 530ms ease-in-out;
-    transition: -webkit-transform 530ms ease-in-out;
-    transition: transform 530ms ease-in-out;
-    transition: transform 530ms ease-in-out, -webkit-transform 530ms ease-in-out;
-  }
-  .section_principale .menu .check i {
-    color: #fff;
-    font-size: larger;
-    -webkit-transition: -webkit-transform 530ms;
-    transition: -webkit-transform 530ms;
-    transition: transform 530ms;
-    transition: transform 530ms, -webkit-transform 530ms;
-  }
-  .section_principale .menu:hover h4 {
-    width: 270px;
-  }
-  .section_principale .menu:hover .prix_accompagnement .menu_accompagnement {
-    width: 270px;
+  .section_principale .menu .description {
+    width: auto;
   }
   .section_principale button {
     margin-top: 5%;
@@ -506,38 +468,8 @@ footer li a {
   .section_principale .menu h4 {
     margin-bottom: -1%;
   }
-  .section_principale .menu .check {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: #99E2D0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    position: absolute;
-    padding: 5%;
-    margin-top: -11%;
-    margin-right: 0%;
-    margin-bottom: 0%;
-    margin-left: 76%;
-    opacity: 0;
-    -webkit-transition: -webkit-transform 530ms ease-in-out;
-    transition: -webkit-transform 530ms ease-in-out;
-    transition: transform 530ms ease-in-out;
-    transition: transform 530ms ease-in-out, -webkit-transform 530ms ease-in-out;
-  }
-  .section_principale .menu .check i {
-    color: #fff;
-    font-size: larger;
-    -webkit-transition: -webkit-transform 530ms;
-    transition: -webkit-transform 530ms;
-    transition: transform 530ms;
-    transition: transform 530ms, -webkit-transform 530ms;
+  .section_principale .menu .description {
+    width: auto;
   }
   .section_principale button {
     margin-top: 5%;

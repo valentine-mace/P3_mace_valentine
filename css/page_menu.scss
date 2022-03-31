@@ -130,8 +130,7 @@ main
       font-family: $roboto;
       font-weight: 800;
       margin-right: 5%;
-      margin-top: 12%;
-      padding-left: 3%;
+      padding-left: 10%;
       }
     .description
     {
@@ -139,7 +138,6 @@ main
       padding-left: 2%;
       @include overflow;
       width: 220px;
-      margin-top: -4%;
       h4
       {
         margin-bottom: 0%;
@@ -157,7 +155,7 @@ main
       display: none;
       text-align: center;
       align-items: center;
-      padding-top: 20%;
+      padding-top: 40px;
       height: 100%;
       background-color: $vert;
       i{
@@ -305,33 +303,8 @@ footer
         margin-bottom: -1%;
         
       }
-      .check{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $vert;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        position: absolute;
-        padding: 3%;
-        @include marge(-6.4%,0%,0%,80.5%);
-        i{
-          color: $blanc;
-          font-size: larger;
-          transition: transform 530ms;
-        }
-        opacity: 0;
-        transition: transform 530ms ease-in-out;
-      }
-      &:hover{
-        h4{
-          width:270px;
-        }
-        .prix_accompagnement{
-          .menu_accompagnement{
-            width:270px;
-          }
-        }
+      .description{
+        width: auto;
       }
     }
     button
@@ -413,23 +386,8 @@ footer
       {
         margin-bottom: -1%;
       }
-      .check{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $vert;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        position: absolute;
-        padding: 5%;
-        @include marge(-11%,0%,0%,76%);
-        i{
-          color: $blanc;
-          font-size: larger;
-          transition: transform 530ms;
-        }
-        opacity: 0;
-        transition: transform 530ms ease-in-out;
+      .description{
+        width: auto;
       }
     }
     button
